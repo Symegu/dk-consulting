@@ -1,0 +1,29 @@
+.main-services {
+  min-width: 1440px;
+  padding: 43px 77px 77px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-services-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-services-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 310px;
+}
+
+.main-services-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

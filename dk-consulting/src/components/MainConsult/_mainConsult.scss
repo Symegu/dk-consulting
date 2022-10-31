@@ -1,0 +1,32 @@
+.main-consult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1440px;
+  padding: 23px 75px 75px 23px;
+}
+
+.main-consult-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-consult-card {
+  width: 630px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(32, 42, 62, 0.13), inset 2px 2px 4px #3B4861;
+  border-radius: 5px;
+  height: 291px;
+  padding: 15px 15px 15px 40px;
+}
+
+.main-card-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 268px;
+}
