@@ -1,4 +1,3 @@
-import "./style/style.css";
 import {Route, Routes} from "react-router";
 import {Mainpage} from "./pages/Mainpage";
 import {About} from "./pages/About";
