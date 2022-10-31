@@ -1,5 +1,5 @@
-@import url("_vars.scss");
-@import url("_mixins.scss");
+@import "_vars.scss";
+@import "_mixins.scss";
 
 * {
     margin: 0;
@@ -11,8 +11,8 @@
     margin: 0 auto;
 }
 
-@import url("../components/AboutPromo/_aboutPromo.scss");
-@import url("../components/MainPromo/_mainPromo.scss");
-@import url("../components/MainConsult/_mainConsult.scss");
-@import url("../components/MainLean/_mainLean.scss");
-@import url("../components/MainServices/_mainServices.scss");
+@import "../components/AboutPromo/_aboutPromo.scss";
+@import "../components/MainPromo/_mainPromo.scss";
+@import "../components/MainConsult/_mainConsult.scss";
+@import "../components/MainLean/_mainLean.scss";
+@import "../components/MainServices/_mainServices.scss";
