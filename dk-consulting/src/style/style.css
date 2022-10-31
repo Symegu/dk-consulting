@@ -1,6 +1,10 @@
 @import url("_vars.scss");
 @import url("_mixins.scss");
 @import url("../components/AboutPromo/_aboutPromo.scss");
+@import url("../components/MainPromo/_mainPromo.scss");
+@import url("../components/MainConsult/_mainConsult.scss");
+@import url("../components/MainLean/_mainLean.scss");
+@import url("../components/MainServices/_mainServices.scss");
 * {
   margin: 0;
   padding: 0;
