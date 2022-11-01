@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .wrapper {
   margin: 0 auto;
 }
 
 .about-promo {
   height: 910px;
+  background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(89.89deg, #090A20 0.11%, rgba(6, 8, 43, 0.91) 42.09%, rgba(7, 9, 62, 0.08) 109.63%), url("../assets/About/about_bg.png");
@@ -18,9 +23,44 @@
   width: calc(50% - 90px);
   background-color: #090A20;
   height: 100%;
+  position: relative;
 }
 .about-promo__wrap h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 56px;
   color: #fff;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+.about-promo__wrap p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 29px;
+  color: #E8E9EF;
+}
+.about-promo__wrap .positioning {
+  position: absolute;
+  top: 203px;
+  right: 35px;
+}
+.about-promo .mission {
+  display: flex;
+  align-items: center;
+}
+.about-promo .mission-container {
+  max-width: 550px;
+}
+.about-promo .mission-container:first-child {
+  margin-bottom: 48px;
+}
+.about-promo__line {
+  width: 546px;
+  height: 1px;
+  background-color: #4D8BBE;
+  margin-bottom: 10px;
 }
 
 .main__promo {

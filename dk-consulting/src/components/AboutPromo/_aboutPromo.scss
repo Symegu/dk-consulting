@@ -1,5 +1,6 @@
 .about-promo {
     height: 910px;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(89.89deg, #090A20 0.11%, rgba(6, 8, 43, 0.91) 42.09%, rgba(7, 9, 62, 0.08) 109.63%), 
@@ -8,9 +9,43 @@
         width: calc(50% - 90px);
         background-color: #090A20;
         height: 100%;
+        position: relative;
 
         & h1 {
-            color: #fff;
+            @include font(200, 40px, 56px, #fff);
+            margin-left: 10px;
+            text-transform: uppercase;
         }
+
+        & p {
+            @include font(300, 22px, 29px, $lightgrey);
+        }
+
+        & .positioning {
+            position: absolute;
+            top: 203px;
+            right: 35px;
+        }
+    }
+
+    & .mission {
+        display: flex;
+        align-items: center;
+        &-container {
+            max-width: 550px;
+
+            &:first-child {
+                margin-bottom: 48px;
+            }
+        }
+
+        
+    }
+
+    &__line {
+        width: 546px;
+        height: 1px;
+        background-color: $blue;
+        margin-bottom: 10px;
     }
 }
