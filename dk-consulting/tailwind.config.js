@@ -15,9 +15,11 @@ module.exports = {
       },
       backgroundImage: {
         'aboutpromo': "url('./assets/About/about_bg.png')",
+        'cardfrontbg': "url('./assets/About/Rectangle 80.jpg')",
+        'cardbackbg': "url('./assets/About/Rectangle 80 (1).jpg')",
       },
       screens: {
-        'lg': {'min': '1024px', 'max': '1279px'},
+        'lg': {'min': '1024px', 'max': '1289px'},
         'md': {'min': '768px', 'max': '1023px'},
         'sm': {'min': '480px', 'max': '767px'},
         'xs': {'min': '320px', 'max': '479px'},

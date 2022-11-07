@@ -16,6 +16,6 @@
       @apply text-[26px] font-normal leading-[36px];
     }
     .par {
-      @apply text-[22px] font-light leading-[36px];
+      @apply text-[22px] font-light leading-[29px];
     }
 };
