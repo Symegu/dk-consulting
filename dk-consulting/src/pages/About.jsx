@@ -1,7 +1,8 @@
-import { AboutPrinciples } from "../components/AboutPrinciples/AboutPrinciples"
-import { AboutPromo } from "../components/AboutPromo/AboutPromo"
-import { AboutResources } from "../components/AboutResources/AboutResourses"
-import { AboutSpecialist } from "../components/AboutSpecialist/AboutSpecialist"
+import { AboutPrinciples } from "../components/About/AboutPrinciples"
+import { AboutPromo } from "../components/About/AboutPromo"
+import { AboutResources } from "../components/About/AboutResourses"
+import { AboutSpecialist } from "../components/About/AboutSpecialist"
+import { AboutWorth } from "../components/About/AboutWorth"
 
 
 export const About = () => {
@@ -12,6 +13,7 @@ export const About = () => {
             <AboutResources />
             <AboutPrinciples />
             <AboutSpecialist />
+            <AboutWorth />
         </div>
     )
 }

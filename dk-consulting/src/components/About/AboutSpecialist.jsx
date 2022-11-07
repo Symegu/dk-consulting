@@ -6,7 +6,7 @@ export const AboutSpecialist = () => {
             <h1 className="bigTitle text-black">Ведущий специалист</h1>
             <div className="w-full h-[1px] bg-blue my-[10px]"></div>
             <div className="bg-gradient-to-t from-[#232B30] via-[#303C43] to-[#37444C] h-full flex items-center justify-between mt-[15px]">
-                <img src={specialist} alt="" srcset="" />
+                <img src={specialist} alt="denis kapitonenko photo"/>
                 <div className="px-[35px] border-l-2 border-solid border-blue">
                     <h4 className="littleTitle text-blue">Капитоненко Денис</h4>
                     <h4 className="littleTitle text-blue mb-[10px]">CEO</h4>

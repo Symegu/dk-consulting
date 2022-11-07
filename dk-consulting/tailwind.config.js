@@ -17,6 +17,7 @@ module.exports = {
         'aboutpromo': "url('./assets/About/about_bg.png')",
         'cardfrontbg': "url('./assets/About/Rectangle 80.jpg')",
         'cardbackbg': "url('./assets/About/Rectangle 80 (1).jpg')",
+        'aboutworthbg': "url('./assets/About/Фон.jpg')",
       },
       screens: {
         'lg': {'min': '1024px', 'max': '1289px'},
