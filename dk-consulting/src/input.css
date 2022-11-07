@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bluebtn {
+      @apply w-[307px] rounded-[8px] text-[16px] py-[22px] border-0 bg-blue hover:bg-darkblue active:bg-darkblue;
+    }
+    .transbtn {
+      @apply w-[303px] rounded-[8px] text-[16px] py-[21px] border-2 border-lightgrey border-solid bg-[rgba(217, 217, 217, 0.04)] hover:bg-darkblue active:bg-darkblue;
+    }
+    .bigTitle {
+      @apply uppercase text-[40px] font-extralight leading-[56px];
+    }
+    .littleTitle {
+      @apply text-[26px] font-normal leading-[36px];
+    }
+    .par {
+      @apply text-[22px] font-light leading-[36px];
+    }
+  }
