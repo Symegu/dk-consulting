@@ -1,3 +1,4 @@
+import AboutCards from "../components/About/AboutCards"
 import { AboutPrinciples } from "../components/About/AboutPrinciples"
 import { AboutPromo } from "../components/About/AboutPromo"
 import { AboutResources } from "../components/About/AboutResourses"
@@ -14,6 +15,7 @@ export const About = () => {
             <AboutPrinciples />
             <AboutSpecialist />
             <AboutWorth />
+            <AboutCards />
         </div>
     )
 }
