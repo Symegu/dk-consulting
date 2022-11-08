@@ -14,6 +14,7 @@ module.exports = {
         "darkblue": "#27699E"
       },
       backgroundImage: {
+        'mainpromo': "url('./assets/Main/Group 230.png')",
         'aboutpromo': "url('./assets/About/about_bg.png')",
         'cardfrontbg': "url('./assets/About/Rectangle 80.jpg')",
         'cardbackbg': "url('./assets/About/Rectangle 80 (1).jpg')",
