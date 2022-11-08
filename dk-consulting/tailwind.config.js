@@ -26,6 +26,7 @@ module.exports = {
         'serviceorganize': "url('./assets/Service/Фото (3).jpg')",
         'serviceteach': "url('./assets/Service/Фото (4).jpg')",
         'serviceheading': "url('./assets/Service/Фон (2).jpg')",
+        'infopromo': "url('./assets/Info/Фото (13).png')"
       },
       screens: {
         'lg': {'min': '1024px', 'max': '1289px'},
