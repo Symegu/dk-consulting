@@ -22,4 +22,4 @@ body {
     .par {
       @apply text-[22px] font-light leading-[29px];
     }
-};
+}
