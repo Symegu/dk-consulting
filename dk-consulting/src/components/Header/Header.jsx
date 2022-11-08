@@ -3,11 +3,11 @@ import hlogo from "../../assets/Header/headlogo.svg";
 
 export default function Header() {
     return(
-        <section className="h-[70px] bg-[#40454E]">
+        <section className="h-[70px] bg-[#40454E] fixed top-0 w-full z-[100]">
             <div className="flex flex-row justify-between items-center max-w-[1290px] mx-auto py-[17px]">
-                <div className="mr-[46px]">
+                <NavLink to="/" className="mr-[46px]">
                     <img src={hlogo} alt="logo"/>
-                </div>
+                </NavLink>
                 <nav className="flex flex-row justify-between items-center px-[46px] border-x-[1px] border-white h-full">
                     <NavLink to="/about">
                         <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey">О компании</p>

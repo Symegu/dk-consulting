@@ -10,16 +10,18 @@ import { MainSchema } from "../components/Main/MainSchema";
 export const MainPage = () => {
     return (
      <>
-         <Header />
-        <MainPromo />
-        <MainConsult />
-        <GreyLine pic={true} heading="Lean-технологии" par="Максимально оптимизирует операционную деятельность. Позволяет планировать развитие с учетом дальних перспектив. Запускает процесс непрерывного совершенствования."/>
-        <MainServices />
-        <MainCards />
-        <div className="py-[30px] mx-auto flex items-center justify-center">
-            <Button bluebtn={true} buttonText="начать изменения"/>
-        </div>
-        <MainSchema />
+        <Header />
+        <main className="mt-[70px]">
+            <MainPromo />
+            <MainConsult />
+            <GreyLine pic={true} heading="Lean-технологии" par="Максимально оптимизирует операционную деятельность. Позволяет планировать развитие с учетом дальних перспектив. Запускает процесс непрерывного совершенствования."/>
+            <MainServices />
+            <MainCards />
+            <div className="py-[30px] mx-auto flex items-center justify-center">
+                <Button bluebtn={true} buttonText="начать изменения"/>
+            </div>
+            <MainSchema />
+        </main>
      </>
 
     )
