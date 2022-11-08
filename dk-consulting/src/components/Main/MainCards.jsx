@@ -1,4 +1,9 @@
-import CardWithText from "../CardWithText/CardWithText";
+import CardWithText from "./CardWithText";
+
+import pic1 from "../../assets/Main/Rectangle 21.jpg"
+import pic2 from "../../assets/Main/Rectangle 19.jpg"
+import pic3 from "../../assets/Main/Rectangle 20.jpg"
+import pic4 from "../../assets/Main/Rectangle 22.jpg"
 
 
 export default function MainCards() {
@@ -40,8 +45,11 @@ export default function MainCards() {
 
 
     return(
-        <section>
-            <CardWithText ltr={true} quotes={firstQuotes} />
+        <section className="max-w-[1440px] mx-auto">
+            <CardWithText ltr={true} quotes={firstQuotes} pic={pic1} header="Где теряет деньги компания?"/>
+            <CardWithText ltr={false} quotes={secondQuotes} pic={pic2} header="К чему это приводит?"/>
+            <CardWithText ltr={true} quotes={thirdQuotes} pic={pic3} header="Как начать процесс изменений?"/>
+            <CardWithText ltr={false} quotes={fourthQuote} pic={pic4} header="Результат трансформации"/>
         </section>
     )
 }
