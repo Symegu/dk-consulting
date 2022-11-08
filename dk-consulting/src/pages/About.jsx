@@ -8,6 +8,7 @@ import { GreyLine } from "../components/UI/GreyLine"
 import Button from "../components/UI/Button";
 import Header from "../components/Header&Footer/Header";
 import Footer from "../components/Header&Footer/Footer"
+import { AboutCompetenses } from "../components/About/AboutCompetenses"
 
 
 export const About = () => {
@@ -22,6 +23,7 @@ export const About = () => {
                 <AboutResources />
                 <AboutPrinciples />
                 <AboutSpecialist />
+                <AboutCompetenses />
                 <AboutWorth />
                 <AboutCards />
                 <GreyLine 
