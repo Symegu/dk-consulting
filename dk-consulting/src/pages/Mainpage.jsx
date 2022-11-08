@@ -7,6 +7,7 @@ import Header from "../components/Header&Footer/Header";
 import Button from "../components/UI/Button";
 import { MainSchema } from "../components/Main/MainSchema";
 import Footer from "../components/Header&Footer/Footer";
+import FourSteps from "../components/FourSteps/FourSteps";
 
 export const MainPage = () => {
     return (
@@ -21,6 +22,7 @@ export const MainPage = () => {
             <div className="py-[30px] mx-auto flex items-center justify-center">
                 <Button bluebtn={true} buttonText="начать изменения"/>
             </div>
+            <FourSteps />
             <MainSchema />
         </main>
         <Footer />

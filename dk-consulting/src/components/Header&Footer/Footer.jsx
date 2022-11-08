@@ -39,7 +39,7 @@ export default function Footer() {
                             </svg>
                             <p className="text-[16px] leading-[21px] text-white ml-[10px] font-light"> dk-consult@????.com</p>
                         </a>
-                </div> 
+                </div>
                 <nav className="ml-[80px] w-[370px] items-start relative">
                     <NavLink to="/services#audit">
                         <p className="text-[14px] leading-[16px] text-white my-[10px]">•    Аудит</p>
