@@ -1,5 +1,5 @@
 import { InfoPromo } from "../components/Info/InfoPromo"
-import Header from "../components/Header/Header";
+import Header from "../components/Header&Footer/Header";
 
 
 export const Info = () => {

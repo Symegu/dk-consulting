@@ -3,7 +3,7 @@ import { ServiceItem2 } from "../components/Services/ServiceItem2"
 import { ServiceItem3 } from "../components/Services/ServiceItem3"
 import { ServiceItem4 } from "../components/Services/ServiceItem4"
 import { ServicePromo } from "../components/Services/ServicePromo"
-import Header from "../components/Header/Header";
+import Header from "../components/Header&Footer/Header";
 
 
 export const Services = () => {
