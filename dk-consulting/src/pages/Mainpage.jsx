@@ -1,17 +1,17 @@
-import MainPromo from "../components/MainPromo/MainPromo";
-import MainConsult from "../components/MainConsult/MainConsult";
-import MainLean from "../components/MainLean/MainLean";
-import MainServices from "../components/MainServices/MainServices";
-import MainCards from "../components/MainCards/MainCards";
+import MainPromo from "../components/Main/MainPromo";
+import MainConsult from "../components/Main/MainConsult";
+import MainLean from "../components/Main/MainLean";
+import MainServices from "../components/Main/MainServices";
+import MainCards from "../components/Main/MainCards";
 
 export const MainPage = () => {
     return (
      <>
         <MainPromo />
-         <MainConsult />
-         <MainLean />
-         <MainServices />
-         <MainCards />
+        <MainConsult />
+        <MainLean />
+        <MainServices />
+        <MainCards />
      </>
 
     )
