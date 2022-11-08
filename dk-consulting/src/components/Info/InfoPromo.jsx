@@ -8,8 +8,8 @@ export const InfoPromo = () => {
                     <div className="absolute top-[321px] right-[54px]">
                         <div className="max-w-[526px] flex flex-col items-start">
                             <h1 className="par text-white mb-[61px]">Разработанный нами материал полезен для изучения руководителям любого уровня, а также для проведения обучающих семинаров с целью повышения личной и командной эффективности сотрудников компании.</h1>
-                            <Link><button className='transbtn mb-[81px]'>Начать сотрудничество</button></Link>
-                            <Link><p className='text-[16px] leading-[21px] text-lightgrey font-extralight'>Регистрация / Авторизация</p></Link>
+                            <Link to="audit"><button className='transbtn mb-[81px]'>Начать сотрудничество</button></Link>
+                            <Link to="audit"><p className='text-[16px] leading-[21px] text-lightgrey font-extralight'>Регистрация / Авторизация</p></Link>
                         </div>
                     </div>
                 </div>

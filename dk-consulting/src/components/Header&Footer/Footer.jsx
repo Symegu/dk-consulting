@@ -41,16 +41,16 @@ export default function Footer() {
                         </a>
                 </div>
                 <nav className="ml-[80px] w-[370px] items-start relative">
-                    <NavLink to="/services#audit" >
+                    <NavLink to="/services#audit">
                         <p className="text-[14px] leading-[16px] text-white my-[10px]">•    Аудит</p>
                     </NavLink>
-                    <NavLink to="/services#consult" >
+                    <NavLink to="/services#consult">
                         <p className="text-[14px] leading-[16px] text-white my-[10px]">•    Промышленный консалтинг</p>
                     </NavLink>
-                    <NavLink to="/services#organize" >
+                    <NavLink to="/services#organize">
                         <p className="text-[14px] leading-[16px] text-white my-[10px]">•    Организация производства</p>
                     </NavLink>
-                    <NavLink to="/services#teach" >
+                    <NavLink to="/services#teach">
                         <p className="text-[14px] leading-[16px] text-white my-[10px]">•    Обучение</p>
                     </NavLink>
                     <p className="text-[10px] leading-[10px] text-[#C5C5C550] absolute bottom-0 right-0">Copyright &copy;&nbsp;2022&nbsp;| DK-Consulting</p>
