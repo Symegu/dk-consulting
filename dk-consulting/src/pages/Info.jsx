@@ -1,7 +1,14 @@
+import { InfoPromo } from "../components/Info/InfoPromo"
+import Header from "../components/Header/Header";
 
 
 export const Info = () => {
     return (
-        <h1>Info</h1>
+        <div>
+            <Header />
+            <main className="mt-[70px]">
+                <InfoPromo />
+            </main>
+        </div>
     )
 }
