@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const url = require("url");
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -26,7 +27,9 @@ module.exports = {
         'serviceorganize': "url('./assets/Service/Фото (3).jpg')",
         'serviceteach': "url('./assets/Service/Фото (4).jpg')",
         'serviceheading': "url('./assets/Service/Фон (2).jpg')",
-        'infopromo': "url('./assets/Info/Фото (13).png')"
+        'infopromo': "url('./assets/Info/Фото (13).png')",
+        'slide1' : "url('./assets/FourSteps/Group 435.jpg')",
+        'chess' : "url('./assets/FourSteps/Rectangle 70.jpg')"
       },
       screens: {
         'lg': {'min': '1024px', 'max': '1289px'},
