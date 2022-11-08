@@ -18,7 +18,13 @@ module.exports = {
         'cardfrontbg': "url('./assets/About/Rectangle 80.jpg')",
         'cardbackbg': "url('./assets/About/Rectangle 80 (1).jpg')",
         'aboutworthbg': "url('./assets/About/Фон.jpg')",
-        'greylinebg': "url('./assets/About/Rectangle 86.jpg')"
+        'greylinebg': "url('./assets/About/Rectangle 86.jpg')",
+        'servicepromo': "url('./assets/Service/Фото (9).png')",
+        'serviceaudit': "url('./assets/Service/Rectangle 35.jpg')",
+        'serviceconsult': "url('./assets/Service/Фон (1).jpg')",
+        'serviceorganize': "url('./assets/Service/Фото (3).jpg')",
+        'serviceteach': "url('./assets/Service/Фото (4).jpg')",
+        'serviceheading': "url('./assets/Service/Фон (2).jpg')",
       },
       screens: {
         'lg': {'min': '1024px', 'max': '1289px'},
