@@ -45,7 +45,7 @@ export default function MainCards() {
 
 
     return(
-        <section>
+        <section className="max-w-[1440px] mx-auto">
             <CardWithText ltr={true} quotes={firstQuotes} pic={pic1} header="Где теряет деньги компания?"/>
             <CardWithText ltr={false} quotes={secondQuotes} pic={pic2} header="К чему это приводит?"/>
             <CardWithText ltr={true} quotes={thirdQuotes} pic={pic3} header="Как начать процесс изменений?"/>
