@@ -10,8 +10,8 @@ export default function CardWithText(props) {
                 <div className={props.ltr? "w-[706px] h-[1px] bg-blue my-[10px]" : "w-[683px] h-[1px] bg-blue my-[10px]"}></div>
                 <ul className="list-disc ml-[18px]">
                     {props.quotes.map(
-                        (q) => {
-                            return(<li className="par text-black">{q}</li>)
+                        (q, i) => {
+                            return(<li key={q[i]} className="par text-black">{q}</li>)
                         }
                     )}
                 </ul>
