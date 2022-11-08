@@ -3,9 +3,10 @@ import MainConsult from "../components/Main/MainConsult";
 import MainServices from "../components/Main/MainServices";
 import MainCards from "../components/Main/MainCards";
 import { GreyLine } from "../components/UI/GreyLine"
-import Header from "../components/Header/Header";
+import Header from "../components/Header&Footer/Header";
 import Button from "../components/UI/Button";
 import { MainSchema } from "../components/Main/MainSchema";
+import Footer from "../components/Header&Footer/Footer";
 
 export const MainPage = () => {
     return (
@@ -22,6 +23,7 @@ export const MainPage = () => {
             </div>
             <MainSchema />
         </main>
+        <Footer />
      </>
 
     )

@@ -6,7 +6,8 @@ import { AboutSpecialist } from "../components/About/AboutSpecialist"
 import { AboutWorth } from "../components/About/AboutWorth"
 import { GreyLine } from "../components/UI/GreyLine"
 import Button from "../components/UI/Button";
-import Header from "../components/Header/Header";
+import Header from "../components/Header&Footer/Header";
+import Footer from "../components/Header&Footer/Footer"
 
 
 export const About = () => {
@@ -31,6 +32,7 @@ export const About = () => {
                     <Button bluebtn={true} buttonText="начать сотрудничество"/>
                 </div>
             </main>
+            <Footer />
         </div>
     )
 }
