@@ -1,6 +1,5 @@
 import {NavLink} from "react-router-dom";
 import hlogo from "../../assets/Header/headlogo.svg";
-import { Link } from 'react-scroll';
 
 export default function Footer() {
     return(
