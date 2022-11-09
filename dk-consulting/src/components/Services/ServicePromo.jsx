@@ -1,9 +1,14 @@
 import { Link } from 'react-scroll'
+import {NavLink} from "react-router-dom";
 
 export const ServicePromo = () => {
     return (
         <div className="h-[910px] bg-no-repeat bg-bottom bg-servicepromo bg-cover">
-            <div className="bg-gradient-to-r from-[#090A20] via-[#06082BE8] to-[#07093E14] h-full">
+            <div className="bg-gradient-to-r from-[#090A20] via-[#06082BE8] to-[#07093E14] h-full relative">
+                <div className="flex absolute text-black font-extralight text-[16px] leading-[22px] top-[16px] right-[100px]">
+                    <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
+                    <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
+                </div>
                 <div className="w-[calc(50%-90px)] bg-[#090A20] h-full relative">
                     <div className="absolute top-[203px] right-[65px]">
                         <div className="max-w-[485px] flex flex-col items-center">

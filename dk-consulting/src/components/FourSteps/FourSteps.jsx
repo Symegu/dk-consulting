@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import SlideNextButton from "./slideNextButton";
+import SlideNextButton from "../UI/slideNextButton";
 import 'swiper/css'
 
 export default function FourSteps() {
