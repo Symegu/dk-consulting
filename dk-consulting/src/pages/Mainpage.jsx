@@ -8,6 +8,7 @@ import Button from "../components/UI/Button";
 import { MainSchema } from "../components/Main/MainSchema";
 import Footer from "../components/Header&Footer/Footer";
 import FourSteps from "../components/FourSteps/FourSteps";
+import FormComponent from "../components/Main/FormComponent";
 
 export const MainPage = () => {
     return (
@@ -24,6 +25,7 @@ export const MainPage = () => {
             </div>
             <FourSteps />
             <MainSchema />
+            <FormComponent />
         </main>
         <Footer />
      </>

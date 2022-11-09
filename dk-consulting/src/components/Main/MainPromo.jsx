@@ -1,4 +1,5 @@
 import Button from "../UI/Button";
+import {NavLink} from "react-router-dom";
 
 
 export default function MainPromo() {
@@ -7,7 +8,11 @@ export default function MainPromo() {
 
     return (
         <section className="bg-mainpromo h-[910px]">
-            <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px]">
+            <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px] relative">
+                <div className="flex absolute text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[0]">
+                    <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
+                    <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
+                </div>
                 <h2 className="max-w-[653px] text-center text-white bigTitle">Комплексный консалтинг производственных компаний</h2>
                     <div className="flex justify-between items-center w-full mb-[75px]">
                         <div className="flex flex-col items-start justify-between">

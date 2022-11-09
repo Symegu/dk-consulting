@@ -29,7 +29,8 @@ module.exports = {
         'serviceheading': "url('./assets/Service/Фон (2).jpg')",
         'infopromo': "url('./assets/Info/Фото (13).png')",
         'slide1' : "url('./assets/FourSteps/Group 435.jpg')",
-        'chess' : "url('./assets/FourSteps/Rectangle 70.jpg')"
+        'chess' : "url('./assets/FourSteps/Rectangle 70.jpg')",
+        'logreg' : "url('./assets/Login/Rectangle 134.jpg')"
       },
       screens: {
         'lg': {'min': '1024px', 'max': '1289px'},
