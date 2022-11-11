@@ -13,7 +13,7 @@ export const MainPage = () => {
     return (
      <>
         <Header />
-        <main className="mt-[70px]">
+        <main className="mt-[70px] lg:mt-[87px] md:mt-[87px] sm:mt-[87px] xs:mt-[87px]">
             <MainPromo />
             <MainConsult />
             <GreyLine pic={true} heading="Lean-технологии" par="Максимально оптимизирует операционную деятельность. Позволяет планировать развитие с учетом дальних перспектив. Запускает процесс непрерывного совершенствования."/>
