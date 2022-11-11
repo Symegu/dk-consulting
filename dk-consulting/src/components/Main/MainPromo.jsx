@@ -6,7 +6,7 @@ export default function MainPromo() {
     const buttonText = "Оставить заявку";
 
     return (
-        <section className="bg-mainpromo h-[910px]">
+        <section className="bg-mainpromo h-[910px] bg-no-repeat bg-cover lg:h-[680px]">
             <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px]">
                 <h2 className="max-w-[653px] text-center text-white bigTitle">Комплексный консалтинг производственных компаний</h2>
                     <div className="flex justify-between items-center w-full mb-[75px]">
