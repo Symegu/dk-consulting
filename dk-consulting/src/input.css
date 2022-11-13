@@ -22,20 +22,4 @@ body {
     .par {
       @apply text-[22px] font-light leading-[29px];
     }
-
-    .bluebtnlg {
-      @apply text-white uppercase w-[276px] rounded-[8px] text-[14px] py-[15px] border-0 bg-blue hover:bg-darkblue active:bg-darkblue;
-    }
-    .transbtnlg {
-      @apply text-white uppercase w-[275px] rounded-[8px] text-[14px] py-[15px] border-2 border-lightgrey border-solid bg-[#D9D9D90A] backdrop-blur hover:bg-blue hover:border-blue active:bg-darkblue active:border-darkblue;
-    }
-    .bigTitlelg {
-      @apply uppercase text-[36px] font-extralight leading-[50px];
-    }
-    .littleTitlelg {
-      @apply text-[22px] font-normal leading-[30px];
-    }
-    .parlg {
-      @apply text-[18px] font-light leading-[24px];
-    }
 }
