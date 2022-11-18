@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 export default function Login() {
     return(
-        <section className="bg-logreg">
+        <section className="bg-logreg bg-no-repeat bg-cover">
             <Header />
                 <div className="w-[1290px] mx-auto h-[910px] flex flex-col items-center justify-center ">
                     <div className="w-[860px] h-[680px] bg-[#0A0B22] flex flex-col items-center relative">
@@ -25,7 +25,7 @@ export default function Login() {
                         </svg>
                         <h2 className="text-white text-[40px] leading-[56px] font-extralight mt-[50px]">Введите логин и пароль</h2>
 
-                        <form className="flex flex-col w-[710px] items-center">
+                        <form className="flex flex-col w-[710px] items-center mt-[40px]">
                             <div className="flex flex-col w-[100%]">
                                 <input type="name" id="name" placeholder="E-mail" className="w-[100%] bg-[#0A0B22] border-b-[1px] border-white mt-[25px] text-[#40454E] font-light text-[22px] leading-[16px] mb-[22px]"/>
                                 <input type="name" id="name" placeholder="Пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] border-white mt-[25px] text-[#40454E] font-light text-[22px] leading-[16px] mb-[40px]"/>
