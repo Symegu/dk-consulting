@@ -3,7 +3,7 @@ import hlogo from "../../assets/Header/headlogo.svg";
 
 export default function Footer() {
     return(
-        <section className="h-[150px] bg-[#40454E] w-full lg:h-[185px] md:h-[185px] sm:h-[185px] xs:h-[185px]">
+        <section className="h-[150px] bg-[#40454E] w-full lg:h-[185px] md:h-[185px] sm:h-[195px] xs:h-[185px]">
             <div className="flex flex-row justify-between items-center max-w-[1290px] mx-auto py-[17px] h-full lg:max-w-[940px] lg:justify-start md:max-w-[690px] md:justify-start sm:max-w-[420px] sm:justify-between sm:flex-start sm:flex-col sm:flex-wrap xs:max-w-[290px] xs:justify-between xs:flex-start xs:flex-col xs:flex-wrap">
                 <NavLink to="/" className="mr-[80px] w-[280px] md:mr-[10px] md:w-[100px] sm:w-[50%] sm:mr-[0px] xs:w-[50%] xs:mr-[0px]">
                     <img src={hlogo} alt="logo" className=" w-[200px] h-auto md:w-[100px] sm:w-[167px] xs:w-[100px]"/>
