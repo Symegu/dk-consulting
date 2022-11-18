@@ -1,6 +1,6 @@
 export default function FormComponent() {
     return (
-        <section className="w-[1290px] mx-auto">
+        <section className="max-w-[1290px] mx-auto">
             <div className="flex flex-col justify-between items-center ">
                 <h2 className="text-[36px] leading-[50px] font-extralight text-center">Запрос на сотрудничество</h2>
                 <p className="font-normal text-[26px] leading-[36px] text-center text-[#40454E]">Опишите Ваш запрос либо проблему и мы свяжемся с Вами</p>

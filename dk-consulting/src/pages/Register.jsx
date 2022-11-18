@@ -5,7 +5,7 @@ import Footer from "../components/Header&Footer/Footer";
 export default function Register() {
     return(
         <section>
-            <section className="bg-logreg">
+            <section className="bg-logreg bg-no-repeat bg-cover">
                 <Header />
                 <div className="w-[1290px] mx-auto h-[910px] flex flex-col items-center justify-center  ">
 

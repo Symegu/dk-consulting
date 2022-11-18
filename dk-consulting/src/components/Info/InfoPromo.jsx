@@ -1,4 +1,5 @@
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
+import {NavLink} from "react-router-dom";
 
 export const InfoPromo = () => {
     return (
@@ -9,7 +10,10 @@ export const InfoPromo = () => {
                         <div className="max-w-[526px] flex flex-col items-start">
                             <h1 className="par text-white mb-[61px]">Разработанный нами материал полезен для изучения руководителям любого уровня, а также для проведения обучающих семинаров с целью повышения личной и командной эффективности сотрудников компании.</h1>
                             <Link to="audit"><button className='transbtn mb-[81px]'>Начать сотрудничество</button></Link>
-                            <Link to="audit"><p className='text-[16px] leading-[21px] text-lightgrey font-extralight'>Регистрация / Авторизация</p></Link>
+                            <div className='text-lightgrey font-extralight'>
+                                <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
+                                <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
+                            </div>
                         </div>
                     </div>
                 </div>

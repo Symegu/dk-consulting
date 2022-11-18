@@ -7,14 +7,15 @@ export default function MainPromo() {
     const buttonText = "Оставить заявку";
 
     return (
-        <section className="bg-mainpromo h-[910px]">
-            <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px] relative">
+        <section className="bg-mainpromo h-[910px] sm:h-[256px] bg-center bg-cover relative xs:h-[328px]">
+            <div className="hidden sm:block xs:block bg-gradient-to-t from-[#030B29] via-[#02114596] to-[#020B2800] absolute top-0 z-2 w-full h-full"></div>
+            <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px] relative lg:max-w-[944px] md:max-w-[690px] sm:max-w-[420px] sm:pt-[82px] sm:pb-[30px] xs:max-w-[290px] xs:pt-[122px] xs:pb-[30px]">
                 <div className="flex absolute text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[0]">
-                    <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
-                    <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
+                    <NavLink to="/register" className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]">Регистрация / </NavLink>
+                    <NavLink to="/login" className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]">Авторизация</NavLink>
                 </div>
-                <h2 className="max-w-[653px] text-center text-white bigTitle">Комплексный консалтинг производственных компаний</h2>
-                    <div className="flex justify-between items-center w-full mb-[75px]">
+                <h2 className="max-w-[653px] text-center text-white bigTitle md:mb-[70px] sm:mb-[47px] sm:text-[20px] sm:leading-[32px] sm:font-light xs:mb-[47px] xs:text-[20px] xs:leading-[32px] xs:font-light">Комплексный консалтинг производственных компаний</h2>
+                    <div className="flex justify-between items-center w-full mb-[75px] lg:max-w-[944px] md:max-w-[690px] sm:hidden xs:hidden">
                         <div className="flex flex-col items-start justify-between">
                             <h3 className="text-[20px] leading-[32px] text-white font-light lg:text-[18px] lg:leading-[28px] md:text-[18px] md:leading-[28px]">ОПЕРАЦИОННАЯ ЭФФЕКТИВНОСТЬ</h3>
                             <p className="text-[20px] leading-[32px] text-white font-light lg:text-[18px] lg:leading-[28px]  md:text-[18px] md:leading-[28px]">Достижения без капиталовложений:</p>
@@ -59,7 +60,7 @@ export default function MainPromo() {
                             </ul>
                         </div>
                     </div>
-                    <Button buttonText={buttonText}/>
+                <Button buttonText={buttonText}/>
             </div>
         </section>
     )
