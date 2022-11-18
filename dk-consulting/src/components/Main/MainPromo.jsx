@@ -1,4 +1,5 @@
 import Button from "../UI/Button";
+import {NavLink} from "react-router-dom";
 
 
 export default function MainPromo() {
@@ -6,11 +7,14 @@ export default function MainPromo() {
     const buttonText = "Оставить заявку";
 
     return (
-        <section className="bg-mainpromo h-[910px] bg-no-repeat bg-cover lg:h-[680px]">
-            <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px] lg:max-w-[940px] lg:py-[30px] md:max-w-[688px]">
-                <h2 className="max-w-[653px] text-center text-white bigTitle lg:mb-[20px]
-                lg:text-[36px] lg:leading-[50px] md:mb-[60px]">Комплексный консалтинг производственных компаний</h2>
-                    <div className="flex justify-between items-start w-full mb-[75px] lg:mb-[20px]">
+        <section className="bg-mainpromo h-[910px]">
+            <div className="max-w-[1290px] mx-auto flex flex-col items-center py-[75px] relative">
+                <div className="flex absolute text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[0]">
+                    <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
+                    <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
+                </div>
+                <h2 className="max-w-[653px] text-center text-white bigTitle">Комплексный консалтинг производственных компаний</h2>
+                    <div className="flex justify-between items-center w-full mb-[75px]">
                         <div className="flex flex-col items-start justify-between">
                             <h3 className="text-[20px] leading-[32px] text-white font-light lg:text-[18px] lg:leading-[28px] md:text-[18px] md:leading-[28px]">ОПЕРАЦИОННАЯ ЭФФЕКТИВНОСТЬ</h3>
                             <p className="text-[20px] leading-[32px] text-white font-light lg:text-[18px] lg:leading-[28px]  md:text-[18px] md:leading-[28px]">Достижения без капиталовложений:</p>
