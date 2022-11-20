@@ -2,8 +2,8 @@
 
 export const AboutPrinciples = () => {
     return (
-        <div className="max-w-[1290px] mx-auto">
-            <h1 className="bigTitle text-black">Принципы работы</h1>
+        <div className="max-w-[1290px] mx-auto lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px xs:max-w-[290px]">
+            <h1 className="bigTitle text-black lg:text-8">Принципы работы</h1>
             <div className="w-full h-[1px] bg-blue my-[10px]"></div>
             <ul className="flex items-center justify-between mt-[15px]">
                 <li className="h-[627px] w-[417px] relative group [perspective:1000px]">
