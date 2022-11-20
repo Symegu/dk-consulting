@@ -1,13 +1,20 @@
 import {NavLink} from "react-router-dom";
+import {useState} from "react";
+import Register from "../../pages/Register";
+import Login from "../../pages/Login";
 
 
 export const AboutPromo = () => {
+
+    const [loginVisible, setLoginVisible] = useState(false);
+    const [regVisible, setRegVisible] = useState(false);
+
     return (
         <div className="h-[910px] lg:h-[685px] sm:h-[256px] xs:h-[328px] bg-no-repeat bg-bottom bg-aboutpromo bg-cover">
             <div className="bg-gradient-to-r from-[#090A20] via-[#06082BE8] to-[#07093E14] h-full relative">
                 <div className="flex absolute z-10 text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[75px] sm:text-[10px] sm:leading-[12px] sm:right-[60px] xs:text-[10px] xs:leading-[12px] xs:right-[calc(50%-61px)] ">
-                    <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
-                    <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
+                    <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация / </button>
+                    <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button>
                 </div>
 
                 <div className="w-[calc(50%-90px)] bg-[#090A20] h-full relative lg:w-[calc(50%-20px)] md:w-[calc(50%+45px)] sm:w-[calc(50%+90px)] xs:w-[calc(50%+120px)]">
@@ -35,6 +42,9 @@ export const AboutPromo = () => {
                     </div>
                 </div>
             </div>
+            <Register isVisible={regVisible} setVisible={setRegVisible}/>
+            <Login isVisible={loginVisible} setVisible={setLoginVisible}/>
         </div>
+
     )
 }

@@ -2,20 +2,18 @@ import Header from "../components/Header&Footer/Header";
 import Footer from "../components/Header&Footer/Footer";
 import {NavLink} from "react-router-dom";
 
-export default function Login() {
+export default function Login(props) {
     return(
-        <section className="bg-logreg bg-no-repeat bg-cover">
+        <section className={props.isVisible ? "bg-[rgba(0,0,0,0.5)] block fixed z-[350] top-0 w-[100%]" : "hidden"}>
             <Header />
                 <div className="w-[1290px] mx-auto h-[910px] flex flex-col items-center justify-center ">
                     <div className="w-[860px] h-[680px] bg-[#0A0B22] flex flex-col items-center relative">
 
-                        <NavLink to="/" className="absolute right-[22px] top-[30px]">
-
+                        <button  className="absolute right-[22px] top-[30px]" onClick={() => {props.setVisible(false)}}>
                             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.45508 1.22253L26.4551 26.2225M26.4551 1.22253L1.45508 26.2225" stroke="#E8E9EF" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-
-                        </NavLink>
+                        </button>
 
                         <svg width="77" height="59" viewBox="0 0 77 59" fill="none" xmlns="http://www.w3.org/2000/svg" className="mt-[50px]">
                             <mask id="path-1-inside-1_315_2799" fill="white">
