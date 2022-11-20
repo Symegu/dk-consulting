@@ -15,7 +15,7 @@ export const AboutResources = () => {
                             </svg>
                             <h3 className="littleTitle text-grey ml-[10px] lg:text-[22px] lg:leading-[30px] md:text-[22px] md:leading-[30px] sm:text-[18px] sm:leading-6  xs:text-[18px] xs:leading-6">Ресурсы</h3>
                         </div>
-                        <div className="w-[817px] h-[1px] bg-blue my-[10px] sm:w-[280px] xs:w-[280px]"></div>
+                        <div className="w-[817px] h-[1px] bg-blue my-[10px] md:w-full sm:w-[280px] xs:w-[280px]"></div>
                         <p className="par text-grey max-w-[780px] leading-[29px] lg:text-[18px] lg:leading-6 md:text-[18px] md:leading-6 sm:text-[15px] sm:leading-5 sm:max-w-[320px]  xs:text-[15px] xs:leading-5">Ресурсами является все&nbsp;то, чем располагает компания для реализации своих целей, например&nbsp;&mdash; финансовые активы, техническая база, человеческий капитал, уникальные технологии и&nbsp;знания.</p>
                     </li>
                     <li className="mb-[63px] lg:mb-[20px] md:mb-[20px] sm:mb-5 xs:mb-4">
@@ -30,7 +30,7 @@ export const AboutResources = () => {
                             </svg>
                             <h3 className="littleTitle text-grey ml-[10px] lg:text-[22px] lg:leading-[30px] md:text-[22px] md:leading-[30px] sm:text-[18px] sm:leading-6  xs:text-[18px] xs:leading-6">Культура</h3>
                         </div>
-                        <div className="w-[817px] h-[1px] bg-blue my-[10px] sm:w-[280px] xs:w-[280px]"></div>
+                        <div className="w-[817px] h-[1px] bg-blue my-[10px] md:w-full sm:w-[280px] xs:w-[280px]"></div>
                         <p className="par text-grey max-w-[800px] leading-[29px] lg:text-[18px] lg:leading-6 md:text-[18px] md:leading-6 sm:text-[15px] sm:leading-5 sm:max-w-[320px]  xs:text-[15px] xs:leading-5">Корпоративная культура&nbsp;&mdash; это модель поведения сотрудников сложившаяся внутри организации. Систему ценностей при этом транслируют лидеры компании, либо формирование норм происходит под влиянием активного большинства.</p>
                     </li>
                     <li className=" lg:mb-[20px] md:mb-[20px] sm:mb-5 xs:mb-4">
@@ -40,7 +40,7 @@ export const AboutResources = () => {
                             </svg>
                             <h3 className="littleTitle text-grey ml-[10px] lg:text-[22px] lg:leading-[30px] md:text-[22px] md:leading-[30px] sm:text-[18px] sm:leading-6  xs:text-[18px] xs:leading-6">Процессы</h3>
                         </div>
-                        <div className="w-[817px] h-[1px] bg-blue my-[10px] sm:w-[280px] xs:w-[280px]"></div>
+                        <div className="w-[817px] h-[1px] bg-blue my-[10px] md:w-full sm:w-[280px] xs:w-[280px]"></div>
                         <p className="par text-grey max-w-[780px] leading-[29px] lg:text-[18px] lg:leading-6 md:text-[18px] md:leading-6 sm:text-[15px] sm:leading-5 sm:max-w-[320px]  xs:text-[15px] xs:leading-5">Процессы &mdash;это система взаимосвязей между сотрудниками компании и&nbsp;ее&nbsp;ресурсами, созданная для достижения результата. Процессы охватывают все сферы жизнедеятельности и&nbsp;обладают свойством влиять друг на&nbsp;друга.</p>
                     </li>
                 </ul>
