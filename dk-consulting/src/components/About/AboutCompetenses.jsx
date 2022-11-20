@@ -56,17 +56,17 @@ export const AboutCompetenses = () => {
                                     </svg>
                                     <h3 className='text-[40px] font-extralight leading-[56px] text-white ml-[10px] lg:text-4xl md:text-4xl sm:text-lg xs:text-base'>Образование:</h3>
                                 </div>
-                                <ul className='flex flex-wrap items-start w-full justify-between  lg:flex-col lg:items-center lg:space-y-5 sm:space-y-3 xs:space-y-2'>
-                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-[110px] md:py-2 sm:py-2 sm:h-full sm:mb-0 xs:py-2  xs:h-full xs:mb-0'>
+                                <ul className='flex flex-wrap items-start w-full justify-between  lg:flex-col lg:items-center lg:space-y-5 md:flex-col md:items-center md:space-y-5 sm:space-y-3 xs:space-y-2'>
+                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-full md:py-3 md:mb-0 sm:py-2 sm:h-full sm:mb-0 xs:py-2  xs:h-full xs:mb-0'>
                                         <p className='par border-l-[1px] border-blue h-full flex flex-col items-center justify-center text-black text-center w-full md:text-base sm:text-xs xs:text-xs xs:text-start xs:pl-2'><span className='font-normal'>Московский Государственный Технический Университет им. Н.Э. Баумана,</span>&laquo;Металлообрабатывающие станки и&nbsp;комплексы&raquo;</p>
                                     </li>
-                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-[110px] md:py-2 sm:py-2 sm:h-full xs:py-2  xs:h-full'>
+                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-full md:py-3 sm:py-2 sm:h-full xs:py-2  xs:h-full'>
                                         <p className='par border-l-[1px] border-blue h-full flex flex-col items-center justify-center text-black text-center w-full md:text-base sm:text-xs xs:text-xs xs:text-start xs:pl-2'><span className='font-normal'>Государственный Университет Управления,</span>&laquo;Менеджмент организации&raquo;</p>
                                     </li>
-                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-[110px] md:py-2 sm:py-2 sm:h-full xs:py-2  xs:h-full'>
+                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-full md:py-3 sm:py-2 sm:h-full xs:py-2  xs:h-full'>
                                         <p className='par border-l-[1px] border-blue h-full flex flex-col items-center justify-center text-black text-center w-full md:text-base sm:text-xs xs:text-xs xs:text-start xs:pl-2'><span className='font-normal'>Институт Бизнеса и&nbsp;Делового Администрирования РАНХиГС при президенте РФ, МВА</span>&laquo;Мастер делового администрирования. Предпринимательство и&nbsp;управление компанией&raquo;</p>
                                     </li>
-                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-[110px] md:py-2 sm:py-2 sm:h-full xs:py-2 xs:h-full'>
+                                    <li className='bg-lightgrey p-[15px] rounded-[5px] w-[595px] h-[150px] mb-[30px] relative flex items-center lg:mb-0 md:h-full md:py-3 sm:py-2 sm:h-full xs:py-2 xs:h-full'>
                                         <p className='par border-l-[1px] border-blue h-full flex flex-col items-center justify-center text-black text-center w-full md:text-base sm:text-xs xs:text-xs xs:text-start xs:pl-2 '><span className='font-normal'>Член&nbsp;&mdash; корреспондент Международной Академии Менеджмента,<br/>победитель конкурса</span>&laquo;Менеджер года 2022&raquo; по&nbsp;версии МАМ</p>
                                     </li>
                                 </ul>
