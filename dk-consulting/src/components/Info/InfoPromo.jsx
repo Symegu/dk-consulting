@@ -9,10 +9,10 @@ export const InfoPromo = () => {
                     <div className="absolute top-[321px] right-[54px] lg:top-[112px]  md:top-[152px] sm:top-[26px] xs:top-[150px] xs:mx-auto xs:right-[calc(50%-117.5px)]">
                         <div className="max-w-[526px] flex flex-col items-start  lg:max-w-[306px]  md:max-w-[306px] sm:max-w-[180px] xs:max-w-[235px] xs:w-full">
                             <h1 className="par text-white mb-[61px] lg:text-[18px] lg:leading-[24px] lg:mb-[50px] md:text-[18px] md:leading-[24px] md:mb-[50px] sm:mb-[18px] sm:text-[12px] sm:leading-[16px] sm:text-center xs:mb-[18px] xs:text-[12px] xs:leading-[16px] xs:text-center">Разработанный нами материал полезен для изучения руководителям любого уровня, а также для проведения обучающих семинаров с целью повышения личной и командной эффективности сотрудников компании.</h1>
-                            <NavLink to="/register" className="absolute xs:top-[115px] xs:mx-auto xs:right-[calc(50%-90px)]">
+                            <NavLink to="/register" className="xs:absolute xs:top-[115px] xs:mx-auto xs:right-[calc(50%-90px)]">
                                 <Button bluebtn={false} buttonText="начать сотрудничество"/>
                             </NavLink>
-                            <div className='text-lightgrey font-extralight text-[16px] leading-[22px] lg:mt-[50px] md:mt-[50px] sm:text-[10px] sm:leading-[12px] sm:mt-[15px] xs:absolute xs:top-[-130px] xs:text-[10px] xs:leading-[12px] xs:left-[calc(50%-63px)]'>
+                            <div className='mt-[50px] text-lightgrey font-extralight text-[16px] leading-[22px] lg:mt-[50px] md:mt-[50px] sm:text-[10px] sm:leading-[12px] sm:mt-[15px] xs:absolute xs:top-[-130px] xs:text-[10px] xs:leading-[12px] xs:left-[calc(50%-63px)] xs:mt-0'>
                                 <NavLink to="/register" className="hover:text-[#27699E]">Регистрация / </NavLink>
                                 <NavLink to="/login" className="hover:text-[#27699E]">Авторизация</NavLink>
                             </div>
