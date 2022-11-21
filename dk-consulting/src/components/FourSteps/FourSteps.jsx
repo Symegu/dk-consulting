@@ -11,18 +11,18 @@ export default function FourSteps() {
             >
                 <SwiperSlide>
                     <div className="w-[100%] bg-chess h-[100%] text-white">
-                        <div className="flex flex-col justify-between h-[100%] py-[25px]">
+                        <div className="flex flex-col justify-between items-center h-[100%] py-[25px]">
                             <h2 className="font-extralight text-[40px] md:text-[36px] sm:text-[20px] sm:leading-[28px] md:leading-[50px] leading-[56px] xs:text-[20px] xs:leading-[28px] text-center">4 ШАГА К ИЗМЕНЕНИЮ</h2>
-                            <p className="text-[26px] leading-[36px] md:text-[22px] sm:text-[18px] sm:leading-[25px] md:leading-[31px] md:w-[450px] sm:w-[370px] text-center mb-[30px] xs:text-[18px] xs:leading-[25px]">от анализа текущей ситуации до построения стратегии развития бизнеса</p>
+                            <p className="font-light text-[26px] leading-[36px] md:text-[22px] sm:text-[18px] sm:leading-[25px] md:leading-[31px] sm:w-[370px] text-center xs:text-[18px] xs:leading-[25px]">от анализа текущей ситуации до построения стратегии развития бизнеса</p>
                         </div>
                         <SlideNextButton />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bg-slide1 w-[100%] h-[100%] px-[65px] text-white">
-                        <div className="flex flex-row justify-around items-center">
-                            <div className=" max-w-[630px] pr-[32px] xs:px-0 flex flex-col justify-between xs:h-[504px] xs:justify-start xs:items-center pb-[60px]">
-                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] mt-[76px] md:mt-[60px] mb-[22px] h-[63px] pt-[10px]">
+                        <div className="flex flex-row justify-around items-center h-[100%]">
+                            <div className=" max-w-[630px] pr-[32px] xs:px-0 flex flex-col justify-between xs:h-[504px] xs:justify-start xs:items-center">
+                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] mb-[22px] h-[63px] pt-[10px]">
                                     1 ШАГ
                                 </h3>
                                 <div className="flex flex-row border-b-[1px] border-[#4D8BBE] items-center xs:pt-[40px]">
@@ -31,7 +31,7 @@ export default function FourSteps() {
                                     </svg>
                                     <h4 className="font-light text-[36px]  sm:text-[20px] sm:leading-[28px] leading-[50px] ml-[10px] xs:text-[20px] xs:leading-[28px] ">Что с нами сейчас?</h4>
                                 </div>
-                                <p className="font-normal text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] xs:text-[15px] xs:leading-[20px] sm:pt-[5px] xs:text-center xs:pt-[60px]">Диагностика производственной компании заключается в оценке качества следующих параметров:</p>
+                                <p className="font-light text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] xs:text-[15px] xs:leading-[20px] sm:pt-[5px] xs:text-center xs:pt-[60px]">Диагностика производственной компании заключается в оценке качества следующих параметров:</p>
                             </div>
                             <div className="flex flex-row justify-between md:hidden sm:hidden xs:hidden">
                                 <ul className="list-disc font-light text-[22px] leading-[30px] max-w-[560px]">
@@ -133,9 +133,9 @@ export default function FourSteps() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bg-slide1 w-[100%] h-[100%] px-[65px] text-white">
-                        <div className="flex  justify-around items-center h-[100%]">
-                            <div className="max-w-[630px] pr-[32px] xs:pr-[0] flex flex-col justify-between">
-                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] h-[63px] pt-[10px]">
+                        <div className="flex  justify-around items-center h-[100%] ">
+                            <div className="max-w-[630px] pr-[32px] xs:pr-[0]">
+                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] h-[63px] mb-[22px] pt-[10px]">
                                     2 ШАГ
                                 </h3>
                                 <div className="flex flex-row  items-center border-b-[1px] border-[#4D8BBE]">
@@ -146,10 +146,10 @@ export default function FourSteps() {
 
                                     <h4 className="font-light text-[36px] leading-[50px] ml-[10px]  sm:text-[20px] sm:leading-[28px] xs:text-[20px] xs:leading-[28px]">Какими ресурсами обладаем?</h4>
                                 </div>
-                                <p className="font-normal text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] xs:text-[15px] xs:leading-[20px] sm:pt-[5px] xs:text-center xs:pt-[60px]">Анализ текущего состояния воплощается в оценке экономического потенциала предприятия:</p>
+                                <p className="font-light text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] xs:text-[15px] xs:leading-[20px] sm:pt-[5px] xs:text-center xs:pt-[60px]">Анализ текущего состояния воплощается в оценке экономического потенциала предприятия:</p>
                             </div>
-                            <div className="flex flex-row justify-between items-center w-[570px] md:hidden">
-                                <ul className="list-disc font-light text-[22px] leading-[30px] ml-[200px] max-w-[320px]">
+                            <div className="flex flex-row justify-between items-center w-[400px] md:hidden sm:hidden">
+                                <ul className="list-disc font-light text-[22px] leading-[30px] ">
                                     <li key={Math.random()}>
                                         <p>
                                             Фондовый потенциал
@@ -182,9 +182,9 @@ export default function FourSteps() {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="hidden md:block">
-                    <div className="flex flex-col bg-slide1 text-white items-center justify-center h-[350px] sm:h-[256px]">
-                        <ul className="list-disc font-light text-[22px] leading-[30px] sm:leading-[20px] sm:text-[15px] max-w-[320px]">
+                <SwiperSlide className="hidden md:block sm:block">
+                    <div className="flex flex-col bg-slide1 text-white items-center justify-center h-[100%] w-[100%]">
+                        <ul className="list-disc font-light text-[22px] leading-[30px] sm:leading-[20px] sm:text-[15px]">
                             <li key={Math.random()}>
                                 <p>
                                     Фондовый потенциал
@@ -217,9 +217,9 @@ export default function FourSteps() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bg-slide1 w-[100%] h-[100%] px-[65px] text-white">
-                        <div className="flex flex-row justify-around items-center">
-                            <div className="max-w-[670px] pr-[32px] flex flex-col justify-between  pb-[60px]">
-                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] mt-[76px]  h-[63px] mb-[22px] pt-[10px]">
+                        <div className="flex flex-row justify-around items-center h-[100%]">
+                            <div className="max-w-[670px] pr-[32px]">
+                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px]  h-[63px] mb-[22px] pt-[10px]">
                                     3 ШАГ
                                 </h3>
                                 <div className="flex flex-row border-b-[1px] border-[#4D8BBE] items-center">
@@ -230,10 +230,10 @@ export default function FourSteps() {
 
                                     <h4 className="font-light text-[36px] leading-[50px] ml-[10px] sm:text-[20px] sm:leading-[28px]">Чего хотим достичь?</h4>
                                 </div>
-                                <p className="font-normal text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] sm:pt-[5px]">На основании оценки потенциала выполняется формирование целей и ключевых показателей компании в выбранном горизонте:</p>
+                                <p className="font-light text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] sm:pt-[5px]">На основании оценки потенциала выполняется формирование целей и ключевых показателей компании в выбранном горизонте:</p>
                             </div>
                             <div className="flex flex-row justify-between items-center md:hidden sm:hidden">
-                                <ul className="list-disc font-light text-[22px] leading-[30px] max-w-[560px]">
+                                <ul className="list-disc font-light text-[22px] leading-[30px] max-w-[500px]">
                                     <li key={Math.random()}>
                                         <p>
                                             Увеличение прибыли, повышение рентабельности
@@ -312,10 +312,10 @@ export default function FourSteps() {
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="bg-slide1 w-[100%] h-[350px] mx-auto pl-[65px] pr-[50px]  flex  text-white items-center justify-between sm:h-[256px]">
-                        <div className="flex flex-row ">
-                            <div className="max-w-[678px] pr-[32px] flex flex-col justify-between  pb-[60px]">
-                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] mt-[76px]  h-[63px] mb-[22px] pt-[10px]">
+                    <div className="bg-slide1 w-[100%] h-[100%] px-[65px] text-white">
+                        <div className="flex flex-row justify-around items-center h-[100%]">
+                            <div className="max-w-[678px] pr-[32px]">
+                                <h3 className=" text-center font-light text-[30px] leading-[42px] border-[3px] border-[#4D8BBE] w-[210px] rounded-[76px] h-[63px] mb-[22px] pt-[10px]">
                                     4 ШАГ
                                 </h3>
                                 <div className="flex flex-row border-b-[1px] border-[#4D8BBE] items-center">
@@ -328,7 +328,7 @@ export default function FourSteps() {
 
                                     <h4 className="font-light text-[36px] leading-[50px] ml-[10px] sm:text-[20px] sm:leading-[28px]">Как будем достигать цели?</h4>
                                 </div>
-                                <p className="font-normal text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] sm:pt-[5px]">Разработка стратегии развития компании выражается в составлении методик достижения ключевых целей, таких как:
+                                <p className="font-light text-[22px] leading-[30px] sm:text-[15px] sm:leading-[20px] sm:pt-[5px]">Разработка стратегии развития компании выражается в составлении методик достижения ключевых целей, таких как:
                                 </p>
                             </div>
                             <div className="flex flex-row justify-between items-center md:hidden sm:hidden">
@@ -367,13 +367,14 @@ export default function FourSteps() {
                                 </ul>
 
                             </div>
-                            <SlideNextButton />
+                            <div className="hidden sm:block xs:block"><SlideNextButton /></div>
+
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="hidden md:block">
-                    <div className="flex flex-col bg-slide1 text-white items-center justify-center h-[350px] sm:h-[256px]">
-                        <ul className="list-disc font-light text-[22px] leading-[30px] sm:leading-[20px] sm:text-[15px] max-w-[560px] sm:max-w-[372px]">
+                <SwiperSlide className="hidden md:block sm:block">
+                    <div className="flex flex-col bg-slide1 text-white items-center justify-center w-[100%] h-[100%]">
+                        <ul className="list-disc font-light text-[22px] leading-[30px] sm:leading-[20px] sm:text-[15px]  ">
                             <li key={Math.random()}>
                                 <p>
                                     Внедрение инструментов lean production
@@ -407,8 +408,6 @@ export default function FourSteps() {
 
                         </ul>
                     </div>
-                    <SlideNextButton />
-
                 </SwiperSlide>
             </Swiper>
         </section>
