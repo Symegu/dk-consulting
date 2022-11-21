@@ -9,7 +9,7 @@ export default function FormComponent() {
             </div>
             <form
                 type="submit"
-                className="flex flex-col  items-center h-[750px] mt-[37px]"
+                className="flex flex-col  items-center h-full mt-[37px]"
             >
                 <ul className="flex justify-between items-center text-[#5A5656] w-[100%] mb-[32px] flex-wrap md:space-y-2 md:mb-5 sm:space-y-2 sm:mb-5 xs:flex-col xs:items-start xs:space-y-2">
                     <li className="flex items-center md:w-[50%] sm:w-[50%]">
@@ -34,25 +34,25 @@ export default function FormComponent() {
                             <label htmlFor="name" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 Ваше имя
                             </label>
-                            <input type="name" id="name" placeholder="Иванов Иван" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] px-4 py-1 md:text-lg sm:text-sm  xs:text-sm"/>
+                            <input type="name" id="name" placeholder="Иванов Иван" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                         <li className="flex flex-col">
                             <label htmlFor="name" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 E-mail
                             </label>
-                            <input type="name" id="name" placeholder="mail@mail.ru" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] px-4 py-1 md:text-lg sm:text-sm  xs:text-sm"/>
+                            <input type="name" id="name" placeholder="mail@mail.ru" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                         <li className="flex flex-col">
                             <label htmlFor="name" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 Телефон
                             </label>
-                            <input type="name" id="name" placeholder="+7 777 777 77 77" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] px-4 py-1 md:text-lg sm:text-sm  xs:text-sm"/>
+                            <input type="name" id="name" placeholder="+7 777 777 77 77" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                         <li className="flex flex-col">
                             <label htmlFor="description" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 Ваш запрос
                             </label>
-                            <input type="text" id="description" placeholder="" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] px-4 py-1 md:text-lg sm:text-sm  xs:text-sm"/>
+                            <input type="text" id="description" placeholder="Опишите ваш запрос" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                 </ul>
                 <div className="flex flex-col w-[100%] mb-10">
