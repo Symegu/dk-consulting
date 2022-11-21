@@ -11,7 +11,7 @@ export const InfoPromo = () => {
         <div className="h-[910px] lg:h-[685px] sm:h-[256px] xs:h-[328px] bg-no-repeat bg-bottom bg-infopromo bg-cover xs:bg-top">
             <div className="bg-gradient-to-r from-[#090A20] via-[#06082BE8] to-[#07093E14] h-full xs:bg-gradient-to-t xs:from-[#090A20] xs:to-[#07093E14]">
                 <div className="w-[calc(50%-90px)] bg-[#090A20] h-full relative lg:w-[calc(50%-20px)]  md:w-[calc(50%+45px)] sm:w-[50%] xs:bg-transparent xs:w-full xs:mx-auto xs:relative">
-                    <div className="absolute top-[321px] right-[54px] lg:top-[112px]  md:top-[152px] sm:top-[26px] xs:top-[150px] xs:mx-auto xs:right-[calc(50%-117.5px)]">
+                    <div className="absolute top-[321px] right-[24px] lg:top-[112px]  md:top-[152px] sm:top-[26px] xs:top-[150px] xs:mx-auto xs:right-[calc(50%-117.5px)]">
                         <div className="max-w-[526px] flex flex-col items-start  lg:max-w-[306px]  md:max-w-[306px] sm:max-w-[180px] xs:max-w-[235px] xs:w-full">
                             <h1 className="par text-white mb-[61px] lg:text-[18px] lg:leading-[24px] lg:mb-[50px] md:text-[18px] md:leading-[24px] md:mb-[50px] sm:mb-[18px] sm:text-[12px] sm:leading-[16px] sm:text-center xs:mb-[18px] xs:text-[12px] xs:leading-[16px] xs:text-center">Разработанный нами материал полезен для изучения руководителям любого уровня, а также для проведения обучающих семинаров с целью повышения личной и командной эффективности сотрудников компании.</h1>
                             <NavLink to="/register" className="xs:absolute xs:top-[115px] xs:mx-auto xs:right-[calc(50%-90px)]">
