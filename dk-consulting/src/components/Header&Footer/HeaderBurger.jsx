@@ -20,17 +20,17 @@ export const HeaderBurger = () => {
                 >
                     <div
                         className={`w-[18px] h-[1px] bg-white rounded-full lg:group-hover:bg-white transition-all duration-300 ${
-                            isOpen && "translate-y-[6px] -rotate-45 bg-black opacity-0 "
+                            isOpen && "translate-y-[6px] -rotate-45 bg-white opacity-0 "
                         }`}
                     />
                     <div
                         className={`w-[18px] h-[1px] bg-white rounded-full lg:group-hover:bg-white transition-all duration-300 ${
-                            isOpen && "translate-y-[-2px] rotate-45 bg-black"
+                            isOpen && "translate-y-[-2px] rotate-45 bg-white"
                         }`}
                     />
                     <div
                         className={`w-[18px] h-[1px] bg-white rounded-full lg:group-hover:bg-white transition-all duration-300 ${
-                            isOpen && "-translate-y-[8px] -rotate-45 bg-black"
+                            isOpen && "-translate-y-[8px] -rotate-45 bg-white"
                         }`}
                     />
                 </button>
