@@ -3,7 +3,7 @@
 export const MainSchema = () => {
     return (
         <div className="max-w-[1290px] mx-auto py-[60px] lg:max-w-[944px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
-            <h1 className="text-[36px] leading-[50px] uppercase text-center font-light text-black mb-[37px] sm:text-[26px] xs:text-[26px]">Схема взаимодействия</h1>
+            <h1 className="text-[36px] leading-[50px] uppercase text-center font-light text-black mb-[37px] lg:text-4xl md:text-4xl sm:text-xl xs:text-xl">Схема взаимодействия</h1>
             <ul className="flex items-start justify-between w-full lg:flex-col lg:gap-8 md:flex-col md:gap-8 sm:flex-col sm:gap-8 xs:flex-col xs:gap-6">
                 <li className="flex flex-col items-center w-full px-[30px]  border-blue lg:border-b-2 lg:pb-8 md:border-b-2 md:pb-8">
                     <h3 className="bigTitle text-blue border-2 border-blue py-[22px] px-[38px] rounded-[50px] lg:py-[15px] lg:px-[32px] md:py-[15px] md:px-[32px] sm:text-[20px] sm:px-[25px] sm:py-[2px] xs:text-[20px] xs:px-[30px] xs:py-[7px]">1</h3>
