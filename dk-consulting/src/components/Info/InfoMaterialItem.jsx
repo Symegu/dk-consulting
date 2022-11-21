@@ -1,14 +1,10 @@
 import React from "react";
 
-import { InfoPromo } from "../components/Info/InfoPromo"
 import Header from "../components/Header&Footer/Header";
 import Footer from "../components/Header&Footer/Footer";
 import { HeaderBurger } from "../components/Header&Footer/HeaderBurger";
-import { InfoMaterials } from "../components/Info/InfoMaterials";
 
-
-export const Info = () => {
-
+export const InfoMaterialItem = () => {
     const [defaultPageWidth, setDefaultPageWidth] = React.useState(window.innerWidth);
     const bp = 767;
     React.useEffect(() => {
@@ -26,8 +22,7 @@ export const Info = () => {
                 : <HeaderBurger/>
             }
             <main className="mt-[70px] lg:mt-[87px] md:mt-[87px] sm:mt-[64px] xs:mt-[64px]">
-                <InfoPromo />
-                <InfoMaterials/>
+                <h1>material info</h1>
             </main>
             <Footer />
         </div>
