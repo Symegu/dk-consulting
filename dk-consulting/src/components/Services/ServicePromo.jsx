@@ -2,8 +2,8 @@ import { Link } from 'react-scroll'
 import {NavLink} from "react-router-dom";
 import Button from "../UI/Button";
 import {useState} from "react";
-import Register from "../../pages/Register";
-import Login from "../../pages/Login";
+import Register from "../UI/Register";
+import Login from "../UI/Login";
 
 export const ServicePromo = () => {
     const [loginVisible, setLoginVisible] = useState(false);

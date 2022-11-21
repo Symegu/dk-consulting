@@ -1,5 +1,5 @@
-import Header from "../components/Header&Footer/Header";
-import Footer from "../components/Header&Footer/Footer";
+import Header from "../Header&Footer/Header";
+import Footer from "../Header&Footer/Footer";
 import {NavLink} from "react-router-dom";
 
 export default function Login(props) {

@@ -1,8 +1,8 @@
 import Button from "../UI/Button";
 import {NavLink} from "react-router-dom";
 import {useState} from "react";
-import Register from "../../pages/Register";
-import Login from "../../pages/Login";
+import Register from "../UI/Register";
+import Login from "../UI/Login";
 
 
 export default function MainPromo() {
