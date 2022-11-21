@@ -12,6 +12,7 @@ import Header from "../components/Header&Footer/Header";
 import Footer from "../components/Header&Footer/Footer";
 import { AboutCompetenses } from "../components/About/AboutCompetenses";
 import { HeaderBurger } from "../components/Header&Footer/HeaderBurger";
+import { AboutDiplomas } from "../components/About/AboutDiplomas";
 
 
 export const About = () => {
@@ -41,6 +42,7 @@ export const About = () => {
                 <AboutPrinciples />
                 <AboutSpecialist />
                 <AboutCompetenses />
+                <AboutDiplomas />
                 <AboutWorth />
                 <AboutCards />
                 <GreyLine 
