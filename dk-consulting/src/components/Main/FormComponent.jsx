@@ -1,8 +1,10 @@
+import { forwardRef } from "react";
+import React from "react";
 import Button from "../../components/UI/Button";
 
-export default function FormComponent() {
+export const FormComponent = React.forwardRef((props, forwardedRef) => {
     return (
-        <section className="pb-10 max-w-[1290px] mx-auto  lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
+        <section {...props} ref={forwardedRef} className="py-[88px] max-w-[1290px] mx-auto  lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
             <div className="flex flex-col justify-between items-center ">
                 <h2 className="text-[36px] leading-[50px] font-extralight text-center uppercase lg:text-4xl md:text-4xl sm:text-2xl xs:text-2xl">Запрос на сотрудничество</h2>
                 <p className="font-normal text-[26px] leading-[36px] text-center text-[#40454E] lg:text-xl md:text-xl sm:hidden xs:hidden">Опишите Ваш запрос либо проблему и мы свяжемся с Вами</p>
@@ -80,4 +82,4 @@ export default function FormComponent() {
             </form>
         </section>
     )
-}
+});
