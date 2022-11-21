@@ -18,7 +18,7 @@ export default function Header() {
                     <NavLink to="/info">
                         <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey lg:text-[9px] lg:leading-[10px] lg:px-[4px] lg:py-[10px] md:text-[9px] md:leading-[10px] md:px-[4px] md:py-[10px]">полезная информация</p>
                     </NavLink>
-                    <NavLink to="/contactform">
+                    <NavLink to="/mainform">
                         <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey lg:text-[9px] lg:leading-[10px] lg:px-[4px] lg:py-[10px] md:text-[9px] md:leading-[10px] md:px-[4px] md:py-[10px]">запрос на сотрудничество</p>
                     </NavLink>
                 </nav>

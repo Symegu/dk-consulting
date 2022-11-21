@@ -11,6 +11,8 @@ function App() {
         <Route path="/info" element={<Info />}></Route>
         <Route path="/services" element={<Services />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/:block" element={<MainPage />}></Route>
+        <Route path="/services/:service" element={<Services/>}></Route>
    </Routes>
   );
 }

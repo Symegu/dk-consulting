@@ -2,7 +2,7 @@
 
 export const MainSchema = () => {
     return (
-        <div className="max-w-[1290px] mx-auto py-[60px] lg:max-w-[944px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
+        <div className="max-w-[1290px] mx-auto pt-[60px] lg:max-w-[944px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
             <h1 className="text-[36px] leading-[50px] uppercase text-center font-light text-black mb-[37px] lg:text-4xl md:text-4xl sm:text-xl xs:text-xl">Схема взаимодействия</h1>
             <ul className="flex items-start justify-between w-full lg:flex-col lg:gap-8 md:flex-col md:gap-8 sm:flex-col sm:gap-8 xs:flex-col xs:gap-6">
                 <li className="flex flex-col items-center w-full px-[30px]  border-blue lg:border-b-2 lg:pb-8 md:border-b-2 md:pb-8">

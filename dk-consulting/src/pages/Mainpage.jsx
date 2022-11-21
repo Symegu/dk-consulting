@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link, animateScroll as scroll } from "react-scroll";
 import MainPromo from "../components/Main/MainPromo";
 import MainConsult from "../components/Main/MainConsult";
 import MainServices from "../components/Main/MainServices";
@@ -10,21 +11,48 @@ import Button from "../components/UI/Button";
 import { MainSchema } from "../components/Main/MainSchema";
 import Footer from "../components/Header&Footer/Footer";
 import FourSteps from "../components/FourSteps/FourSteps";
-import FormComponent from "../components/Main/FormComponent";
+import {FormComponent} from "../components/Main/FormComponent";
 import { HeaderBurger } from "../components/Header&Footer/HeaderBurger";
+import { useRef, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 export const MainPage = () => {
-
+    
     const [defaultPageWidth, setDefaultPageWidth] = React.useState(window.innerWidth);
     const bp = 767;
+
     React.useEffect(() => {
-        const windowResizer = () => setDefaultPageWidth(window.innerWidth);
+        const windowResizer = () => {
+            setDefaultPageWidth(window.innerWidth)
+        };
         window.addEventListener("resize", windowResizer);
         return () => {
             window.removeEventListener("resize", windowResizer);
         };
     }, []);
 
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
+    const params = useParams();
+
+    const blocks = {
+        mainform: useRef(null)
+    };
+
+    const scrollToBlock = (block = "") => {
+        if (block in blocks) {
+            blocks[block].current.scrollIntoView({
+              behavior: "smooth"
+            });
+        }
+    }
+
+    useEffect(() => {
+        scrollToBlock(params.block);
+      }, [params]);
+    
     return (
      <>
         {defaultPageWidth > bp
@@ -43,7 +71,17 @@ export const MainPage = () => {
             </div>
             <FourSteps />
             <MainSchema />
-            <FormComponent />
+            <FormComponent ref={blocks.mainform} />
+            <Link to="" onClick={scrollToTop} smooth={true} className={window.scrollY > 850 ? "fixed bottom-4 right-4 z-[300]" : "hidden"}>
+                <svg className=" lg:w-[50px] md:w-10 sm:w-[30px] xs:w-[30px]" width="60" height="100" viewBox="0 0 60 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.5">
+                    <rect x="1" y="99" width="58" height="58" rx="29" transform="rotate(-90 1 99)" stroke="#40454E" strokeWidth="2"/>
+                    </g>
+                    <line x1="30.396" y1="78.3716" x2="30.396" y2="1.62872" stroke="#40454E" strokeWidth="2" strokeLinecap="round"/>
+                    <line x1="1" y1="-1" x2="17.0377" y2="-1" transform="matrix(0.512439 -0.858724 0.955154 0.296109 22.1528 16.4355)" stroke="#40454E" strokeWidth="2" strokeLinecap="round"/>
+                    <line x1="1" y1="-1" x2="17.0377" y2="-1" transform="matrix(-0.512439 -0.858724 -0.955154 0.296109 38.4497 16.4355)" stroke="#40454E" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+            </Link>
         </main>
         <Footer />
      </>

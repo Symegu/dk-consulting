@@ -43,16 +43,32 @@ export const HeaderBurger = () => {
             >
                 <div className="bg-grey w-full py-[64px] z-[150] relative">
                     <nav className="flex flex-col justify-between items-center pt-[46px] border-x-[1px] border-white h-full w-full gap-[10px]">
-                        <NavLink to="/about">
+                        <NavLink to="/about" 
+                            onClick={() => {
+                                setIsOpen(!isOpen);
+                            }}
+                        >
                             <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey">О компании</p>
                         </NavLink>
-                        <NavLink to="/services">
+                        <NavLink to="/services"
+                            onClick={() => {
+                                setIsOpen(!isOpen);
+                            }}
+                        >
                             <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey">услуги</p>
                         </NavLink>
-                        <NavLink to="/info">
+                        <NavLink to="/info"
+                            onClick={() => {
+                                setIsOpen(!isOpen);
+                            }}
+                        >
                             <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey">полезная информация</p>
                         </NavLink>
-                        <NavLink to="/contactform">
+                        <NavLink to="/mainform"
+                            onClick={() => {
+                                setIsOpen(!isOpen);
+                            }}
+                        >
                             <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey">запрос на сотрудничество</p>
                         </NavLink>
                     </nav>
