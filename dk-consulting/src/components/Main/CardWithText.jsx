@@ -11,7 +11,7 @@ export default function CardWithText(props) {
                 <ul className="list-disc ml-[18px]">
                     {props.quotes.map(
                         (q, i) => {
-                            return(<li key={q[i]} className="par text-black lg:text-[16px] lg:leading-[21px] md:text-[16px] md:leading-[21px] sm:text-[12px] sm:leading-[16px] sm:font-extralight  xs:text-[12px] xs:leading-[16px] xs:font-extralight">{q}</li>)
+                            return(<li key={i} className="par text-black lg:text-[16px] lg:leading-[21px] md:text-[16px] md:leading-[21px] sm:text-[12px] sm:leading-[16px] sm:font-extralight  xs:text-[12px] xs:leading-[16px] xs:font-extralight">{q}</li>)
                         }
                     )}
                 </ul>
