@@ -1,12 +1,13 @@
 import { ServiceItemAd } from "./ServiceItemAd"
 import { ServiceItemPromo } from "./ServiceItemPromo"
 import teachpic from "../../assets/Service/Фото (12).png"
+import React from "react";
 
 
-export const ServiceItem4 = () => {
+export const ServiceItem4 = React.forwardRef((props, forwardedRef) => {
 
     return (
-        <div id="teach">
+        <div id="teach" {...props} ref={forwardedRef}>
             <ServiceItemPromo promoheading="Аудит" promobg="bg-serviceteach"/>
             <div className="flex justify-between items-center max-w-[1290px] mx-auto mt-[40px] mb-[20px] h-full lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
                 <ul>
@@ -95,4 +96,4 @@ export const ServiceItem4 = () => {
             <ServiceItemAd ad="Развитие компетенций менеджмента - основа роста компании"/>
         </div>
     )
-}
+})

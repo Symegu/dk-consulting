@@ -41,16 +41,16 @@ export default function Footer() {
                         </a>
                 </div>
                 <nav className="ml-[80px] w-[370px] items-start relative md:ml-4 md:w-[290px] sm:w-[40%] sm:ml-0 sm:h-full xs:w-[40%] xs:ml-0 xs:h-full sm:pl-[26px] sm:border-l-[1px] border-white xs:pl-[26px] xs:border-l-[1px]">
-                    <NavLink to="/services#audit">
+                    <NavLink to="/services/audit">
                         <p className="text-[14px] leading-[16px] text-white my-[10px] sm:text-[10px] sm:leading-[13px] xs:text-[10px] xs:leading-[13px]">•    Аудит</p>
                     </NavLink>
-                    <NavLink to="/services#consult">
+                    <NavLink to="/services/consult">
                         <p className="text-[14px] leading-[16px] text-white my-[10px] sm:text-[10px] sm:leading-[13px] xs:text-[10px] xs:leading-[13px]">•    Промышленный консалтинг</p>
                     </NavLink>
-                    <NavLink to="/services#organize">
+                    <NavLink to="/services/organize">
                         <p className="text-[14px] leading-[16px] text-white my-[10px] sm:text-[10px] sm:leading-[13px] xs:text-[10px] xs:leading-[13px]">•    Организация производства</p>
                     </NavLink>
-                    <NavLink to="/services#teach">
+                    <NavLink to="/services/teach">
                         <p className="text-[14px] leading-[16px] text-white my-[10px] sm:text-[10px] sm:leading-[13px] xs:text-[10px] xs:leading-[13px]">•    Обучение</p>
                     </NavLink>
                     <p className="text-[10px] leading-[10px] text-[#C5C5C550] absolute bottom-0 right-0 text-end">Copyright &copy;&nbsp;2022&nbsp;| DK-Consulting</p>

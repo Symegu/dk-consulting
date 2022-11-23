@@ -38,7 +38,7 @@ export const MainPage = () => {
     const params = useParams();
 
     const blocks = {
-        mainform: useRef(null)
+        mainform: useRef(null),
     };
 
     const scrollToBlock = (block = "") => {
