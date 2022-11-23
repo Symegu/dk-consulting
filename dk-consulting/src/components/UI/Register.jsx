@@ -1,7 +1,40 @@
 import Button from "./Button";
 import {NavLink} from "react-router-dom";
+import {useState} from "react";
+import authService from "../../services/authService";
 
 export default function Register(props) {
+
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const [confirmPassword, setConfirmPassword] = useState();
+
+    const handlePasswordChange = (e) => {
+        setPassword(e.target.value);
+    };
+
+    const handlePasswordRChange = (e) => {
+        setConfirmPassword(e.target.value);
+    };
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    };
+
+    const handleNicknameChange = (e) => {
+        setName(e.target.value);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        authService.register({email: email, username: name, password: password, password2: confirmPassword}).then((res) => {
+            console.log(res)
+        }).catch(err => {
+            console.log(err)
+        })
+    }
+
     return(
         <section>
             <section className={props.isVisible ? "bg-[rgba(0,0,0,0.5)] block fixed z-[500] top-0 w-full" : "hidden"}>
@@ -23,17 +56,18 @@ export default function Register(props) {
                         <h2 className="text-white text-[40px] text-center leading-[56px] font-extralight mt-[50px] lg:text-3xl md:text-3xl md:mt-[25px] sm:mt-5 sm:text-lg xs:text-lg xs:mt-4 xs:max-w-[200px]">Предлагаем пройти регистрацию на сайте,</h2>
                         <p className="text-white text-center text-[20px] leading-[28px] font-extralight lg:text-lg md:text-base sm:text-sm sm:text-lightgrey sm:opacity-50 xs:text-[10px] xs:text-lightgrey xs:opacity-50">чтобы Вы cмогли пользоваться полезными материалами</p>
 
-                        <form className="flex flex-col w-full items-center max-w-[710px] lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]">
+                        <form className="flex flex-col w-full items-center max-w-[710px] lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]" onSubmit={handleSubmit}>
                             <div className="flex flex-col w-full items-center max-w-[710px] py-4 space-y-4 lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]">
-                                <input type="name" id="name" placeholder="E-mail" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <input type="name" id="name" placeholder="Придумайте пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <input type="name" id="name" placeholder="Повторите пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="name" id="name" placeholder="Ваше имя" value={name || ""} onChange={handleNicknameChange} className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="name" id="email" placeholder="E-mail" value={email || ""} onChange={handleEmailChange} className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="name" id="password" value={password || ""} onChange={handlePasswordChange} placeholder="Придумайте пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="name" id="conpassword" value={confirmPassword || ""} onChange={handlePasswordRChange} placeholder="Повторите пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
                                 <div className="flex items-center w-full border-b-[1px] p-3">
                                     <input type="checkbox" id="capcha" className="w-[25px] h-[25px] bg-[#40454E] mr-[15px] sm:w-4 sm:h-4 xs:w-4 xs:h-4"/>
                                     <label htmlFor="capcha" className="text-[16px] leading-[22px] text-white font-extralight">Я не робот</label>
                                 </div>
                             </div>
-                            <Button bluebtn="true" buttonText="зарегистрироваться"></Button>
+                            <Button bluebtn="true" buttonText="зарегистрироваться" type="submit" ></Button>
                         </form>
                         <NavLink to="/login" className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4">
                             Авторизоваться
