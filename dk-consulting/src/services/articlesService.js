@@ -1,8 +1,8 @@
 import http from "../http";
 
 const articlesService = {
-    getArticles: async (payload)=> {
-        const { data } = await http.post("/api/materials/", payload);
+    getArticles: async ()=> {
+        const { data } = await http.get("/api/materials/");
         return data;
     },
 }
