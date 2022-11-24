@@ -4,6 +4,7 @@ import {useState} from "react";
 import Register from "../UI/Register";
 import Login from "../UI/Login";
 import CountUp from 'react-countup';
+import { Link } from "react-scroll";
 
 
 export default function MainPromo() {
@@ -77,7 +78,9 @@ export default function MainPromo() {
                             </ul>
                         </div>
                     </div>
-                <Button buttonText={buttonText}/>
+                <NavLink to="/mainform">
+                    <Button buttonText={buttonText}/>
+                </NavLink>
                 
             </div>
             <Register isVisible={regVisible} setVisible={setRegVisible}/>

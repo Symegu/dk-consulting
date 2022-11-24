@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { SlidePrevButton } from '../UI/SlideAboutPrevBtn';
-import { SlideNextButton } from '../UI/SlideAboutNewxBtn';
+import { SlideNextButton } from '../UI/SlideAboutNextBtn';
 
 export const AboutCompetenses = () => {
 

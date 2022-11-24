@@ -13,6 +13,7 @@ import Footer from "../components/Header&Footer/Footer";
 import { AboutCompetenses } from "../components/About/AboutCompetenses";
 import { HeaderBurger } from "../components/Header&Footer/HeaderBurger";
 import { AboutDiplomas } from "../components/About/AboutDiplomas";
+import { NavLink } from "react-router-dom";
 
 
 export const About = () => {
@@ -49,9 +50,9 @@ export const About = () => {
                     bigpar={true}
                     par={parline}
                 />
-                <div className="py-[30px] mx-auto flex items-center justify-center">
+                <NavLink to="/mainform" className="py-[30px] mx-auto flex items-center justify-center">
                     <Button bluebtn={true} buttonText="начать сотрудничество"/>
-                </div>
+                </NavLink>
             </main>
             <Footer />
         </div>

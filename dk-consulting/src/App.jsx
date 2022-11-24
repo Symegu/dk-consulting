@@ -3,6 +3,7 @@ import {MainPage} from "./pages/Mainpage";
 import {About} from "./pages/About";
 import {Info} from "./pages/Info";
 import {Services} from "./pages/Services";
+import { Privacy } from "./pages/Privacy";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/:block" element={<MainPage />}></Route>
         <Route path="/services/:service" element={<Services/>}></Route>
+        <Route path="/privacy-policy" element={<Privacy/>}></Route>
    </Routes>
   );
 }

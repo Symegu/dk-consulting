@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import MainPromo from "../components/Main/MainPromo";
 import MainConsult from "../components/Main/MainConsult";
@@ -66,9 +66,9 @@ export const MainPage = () => {
             <GreyLine pic={true} heading="Lean-технологии" par="Максимально оптимизирует операционную деятельность. Позволяет планировать развитие с учетом дальних перспектив. Запускает процесс непрерывного совершенствования."/>
             <MainServices />
             <MainCards />
-            <div className="py-[30px] mx-auto flex items-center justify-center">
+            <NavLink to="/mainform" className="py-[30px] mx-auto flex items-center justify-center">
                 <Button bluebtn={true} buttonText="начать изменения"/>
-            </div>
+            </NavLink>
             <FourSteps />
             <MainSchema />
             <FormComponent ref={blocks.mainform} />

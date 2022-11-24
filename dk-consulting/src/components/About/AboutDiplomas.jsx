@@ -16,6 +16,9 @@ import diplom4 from "../../assets/About/diplom4.jpg";
 import diplom5 from "../../assets/About/diplom5.jpg";
 import diplom6 from "../../assets/About/diplom6.jpg";
 import diplom7 from "../../assets/About/diplom7.jpg";
+import diplom8 from "../../assets/About/diplom8.jpg";
+import { DiplomasNextButton } from "../UI/DiplomasNextBtn";
+import { DiplomasPrevButton } from "../UI/DiplomasPrevBtn";
 
 
 export const AboutDiplomas = () => {
@@ -25,8 +28,9 @@ export const AboutDiplomas = () => {
                 effect={"cards"}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="w-[500px] h-auto sm:w-80 xs:w-60"
+                className="w-[500px] relative h-auto sm:w-80 xs:w-60"
             >
+                <DiplomasPrevButton/>
                 <SwiperSlide>
                     <img src={diplom1} alt="diplom1" />
                 </SwiperSlide>
@@ -50,6 +54,10 @@ export const AboutDiplomas = () => {
                 <SwiperSlide>
                     <img src={diplom7} alt="diplom7" />
                 </SwiperSlide>
+                <SwiperSlide>
+                    <img src={diplom8} alt="diplom8" />
+                </SwiperSlide>
+                <DiplomasNextButton/>
             </Swiper>
         </section>
     )

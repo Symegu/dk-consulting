@@ -8,7 +8,7 @@ export const ServiceItem4 = React.forwardRef((props, forwardedRef) => {
 
     return (
         <div id="teach" {...props} ref={forwardedRef}>
-            <ServiceItemPromo promoheading="Аудит" promobg="bg-serviceteach"/>
+            <ServiceItemPromo promoheading="Обучение" promobg="bg-serviceteach"/>
             <div className="flex justify-between items-center max-w-[1290px] mx-auto mt-[40px] mb-[20px] h-full lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
                 <ul>
                     <li className="mb-[20px]">

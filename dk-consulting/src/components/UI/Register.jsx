@@ -62,10 +62,6 @@ export default function Register(props) {
                                 <input type="name" id="email" placeholder="E-mail" value={email || ""} onChange={handleEmailChange} className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
                                 <input type="name" id="password" value={password || ""} onChange={handlePasswordChange} placeholder="Придумайте пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
                                 <input type="name" id="conpassword" value={confirmPassword || ""} onChange={handlePasswordRChange} placeholder="Повторите пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <div className="flex items-center w-full border-b-[1px] p-3">
-                                    <input type="checkbox" id="capcha" className="w-[25px] h-[25px] bg-[#40454E] mr-[15px] sm:w-4 sm:h-4 xs:w-4 xs:h-4"/>
-                                    <label htmlFor="capcha" className="text-[16px] leading-[22px] text-white font-extralight">Я не робот</label>
-                                </div>
                             </div>
                             <Button bluebtn="true" buttonText="зарегистрироваться" type="submit" ></Button>
                         </form>
