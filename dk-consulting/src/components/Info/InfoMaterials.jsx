@@ -1,14 +1,16 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import articlesService from "../../services/articlesService";
 
 
 export const InfoMaterials = () => {
 
+    const [articles, setArticles] = useState({})
     //localStorage.clear()
 
     useEffect(()=>{
-        articlesService.getArticles().then( (res) => {
+        articlesService.getArticles({for_clients: "true"}).then( (res) => {
             console.log(res)
+            setArticles(res)
         }).catch(err => {
             console.log(err)})
     },[])
