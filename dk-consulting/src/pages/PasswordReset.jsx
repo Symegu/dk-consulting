@@ -8,6 +8,7 @@ const PasswordReset = () => {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault()
     authService
       .resetPassword({ email: email })
       .then((res) => {
