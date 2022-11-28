@@ -11,21 +11,23 @@ export const ServicePromo = () => {
   const [account, setAccount] = useState(false);
   const [email, setEmail] = useState("");
 
-  useEffect(() => {
-    const jwt = localStorage.getItem("jwt");
-    if (jwt) {
-      setAccount(true);
-      const localEmail = localStorage.getItem("email");
-      setEmail(localEmail);
-    } else {
-      console.log("net tokena");
-    }
-  }, [account]);
+    console.log(account)
 
-  const logout = () => {
-    localStorage.clear();
-    setAccount(false);
-  };
+    useEffect(()=>{
+        const jwt = localStorage.getItem('jwt');
+      if (jwt) {
+        setAccount(true);
+        const localEmail = localStorage.getItem("email");
+        setEmail(localEmail);
+      } else {
+        console.log("net tokena");
+      }
+    }, [account])
+
+    const logout = () => {
+        localStorage.clear();
+        setAccount(false);
+    }
 
   return (
     <div className="h-[910px] lg:h-[685px] sm:h-[256px] xs:h-[328px] bg-no-repeat bg-bottom bg-servicepromo bg-cover relative">

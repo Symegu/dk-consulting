@@ -33,8 +33,8 @@ export const AboutPromo = () => {
                 <div className="flex absolute z-10 text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[75px] sm:text-[10px] sm:leading-[12px] sm:right-[60px] xs:text-[10px] xs:leading-[12px] xs:right-[calc(50%-61px)] ">
                 {
                     account ?  <div>
-                        <p className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]">{email}</p>
-                        <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={logout}>Выйти</button>
+                        <p className="hover:text-blue inline sm:text-[10px] xs:text-[10px]">{email} </p>
+                        <button className="hover:text-blue sm:text-[10px] xs:text-[10px]" onClick={logout}>/ Выйти</button>
                     </div> :  <div>
                     <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация / </button>
                     <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button></div>
