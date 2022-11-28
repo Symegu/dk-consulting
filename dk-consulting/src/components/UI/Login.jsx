@@ -24,6 +24,7 @@ export default function Login(props) {
             localStorage.setItem("jwt", res.token);
             localStorage.setItem("email", email);
             props.setAccount(true);
+            props.setVisible(false);
         }).catch(err => {
             console.log(err)
         })
@@ -56,9 +57,14 @@ export default function Login(props) {
                             </div>
                             <Button bluebtn="true" buttonText="войти" type="submit"></Button>
                         </form>
-                        <NavLink to="/register" className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4">
+                        <button to="/register" className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4" onClick={ ()=> {
+                            props.setVisible(false);
+                            props.regVisible(true);
+                        }
+
+                        }>
                             Зарегистрироваться
-                        </NavLink>
+                        </button>
                     </div>
 
                 </div>

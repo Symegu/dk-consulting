@@ -63,8 +63,8 @@ export const ServicePromo = () => {
                     </div>
                 </div>
             </div>
-            <Register isVisible={regVisible} setVisible={setRegVisible}/>
-            <Login isVisible={loginVisible} setVisible={setLoginVisible}/>
+            <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
+            <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount} regVisible={setRegVisible}/>
         </div>
     )
 }

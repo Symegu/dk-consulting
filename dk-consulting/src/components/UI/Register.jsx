@@ -1,3 +1,4 @@
+
 import Button from "./Button";
 import {NavLink} from "react-router-dom";
 import {useState} from "react";
@@ -30,6 +31,7 @@ export default function Register(props) {
         e.preventDefault();
         authService.register({email: email, username: name, password: password, password2: confirmPassword}).then((res) => {
             console.log(res)
+            props.setVisible(false);
         }).catch(err => {
             console.log(err)
         })
@@ -65,9 +67,12 @@ export default function Register(props) {
                             </div>
                             <Button bluebtn="true" buttonText="зарегистрироваться" type="submit" ></Button>
                         </form>
-                        <NavLink to="/login" className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4">
+                        <button className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4" onClick={()=> {
+                            props.setVisible(false);
+                            props.setLoginVisible(true);
+                        }}>
                             Авторизоваться
-                        </NavLink>
+                        </button>
                     </div>
 
                 </div>

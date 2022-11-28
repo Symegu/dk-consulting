@@ -107,8 +107,8 @@ export default function MainPromo() {
                 </NavLink>
                 
             </div>
-            <Register isVisible={regVisible} setVisible={setRegVisible}/>
-            <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount}/>
+            <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
+            <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount} regVisible={setRegVisible}/>
         </section>
     )
 }
