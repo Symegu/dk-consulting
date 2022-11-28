@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import MainPromo from "../components/Main/MainPromo";
@@ -19,6 +19,7 @@ import { useParams } from "react-router-dom";
 export const MainPage = () => {
     
     const [defaultPageWidth, setDefaultPageWidth] = React.useState(window.innerWidth);
+    
     const bp = 767;
 
     React.useEffect(() => {
@@ -30,6 +31,10 @@ export const MainPage = () => {
             window.removeEventListener("resize", windowResizer);
         };
     }, []);
+
+
+
+
 
     const scrollToTop = () => {
         scroll.scrollToTop();
