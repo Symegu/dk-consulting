@@ -6,7 +6,8 @@ export const FourSteps = () => {
     return (
         <section className="h-[350px] sm:h-[256px]  xs:h-[256px] mx-auto ">
             <Swiper
-                slidesPerView={1}
+                loop={true}
+                //slidesPerView={1}
                 className="w-full h-full mx-auto relative"
             >
                 <SwiperSlide className="relative">

@@ -61,11 +61,11 @@ export default function Register(props) {
                         <form className="flex flex-col w-full items-center max-w-[710px] lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]" onSubmit={handleSubmit}>
                             <div className="flex flex-col w-full items-center max-w-[710px] py-4 space-y-4 lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]">
                                 <input type="name" id="name" placeholder="Ваше имя" value={name || ""} onChange={handleNicknameChange} className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <input type="name" id="email" placeholder="E-mail" value={email || ""} onChange={handleEmailChange} className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <input type="name" id="password" value={password || ""} onChange={handlePasswordChange} placeholder="Придумайте пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <input type="name" id="conpassword" value={confirmPassword || ""} onChange={handlePasswordRChange} placeholder="Повторите пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="email" id="email" placeholder="E-mail" value={email || ""} onChange={handleEmailChange} className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="password" id="password" value={password || ""} onChange={handlePasswordChange} placeholder="Придумайте пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="password" id="conpassword" value={confirmPassword || ""} onChange={handlePasswordRChange} placeholder="Повторите пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
                             </div>
-                            <Button bluebtn="true" buttonText="зарегистрироваться" type="submit" ></Button>
+                            <Button bluebtn="true" buttonText="зарегистрироваться" ></Button>
                         </form>
                         <button className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4" onClick={()=> {
                             props.setVisible(false);

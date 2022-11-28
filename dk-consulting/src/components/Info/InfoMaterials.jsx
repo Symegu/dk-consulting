@@ -14,7 +14,6 @@ export const InfoMaterials = () => {
             setArticles(res)
         }).catch(err => {
             console.log(err)})
-
     }, [])
 
 
@@ -22,7 +21,7 @@ export const InfoMaterials = () => {
     return (
         <section>
             <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
-                {articles.results == undefined 
+                {articles.results === undefined 
                     ? <li>
                         <h1>Вам необходимо зарегистрироваться или авторизироваться, чтобы увидеть пользовательские материалы</h1>
                       </li>
