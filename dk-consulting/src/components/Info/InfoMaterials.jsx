@@ -9,11 +9,17 @@ export const InfoMaterials = () => {
     console.log(articles.results)
 
     useEffect(()=>{
-        articlesService.getArticles({for_clients: "true"}).then( (res) => {
-            console.log(res)
-            setArticles(res)
-        }).catch(err => {
-            console.log(err)})
+        const jwt = localStorage.getItem("jwt");
+        if (jwt) {
+            articlesService.getArticles({for_clients: "true"}).then( (res) => {
+                console.log(res)
+                setArticles(res)
+            }).catch(err => {
+                console.log(err)})
+        } else {
+            console.log("user unauthorized");
+        }
+       
     }, [])
 
 

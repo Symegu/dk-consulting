@@ -21,12 +21,12 @@ const PasswordResetConfirm = () => {
         <form onSubmit={handleSubmit} className="flex flex-col items-center">
           <h2>Создание нового пароля</h2>
           <input
-            type="email"
-            placeholder="email"
-            value={email}
+            type="text"
+            placeholder="Код ферификации"
+            value={token}
             onChange={handleEmailChange}
           ></input>
-          <button type="submit">Сбросить пароль</button>
+          <button type="submit">Создать новый пароль</button>
         </form>
       </div>
     </section>
