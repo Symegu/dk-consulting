@@ -1,12 +1,20 @@
+import { useState } from "react";
+import { useParams } from "react-router";
+import authService from "../services/authService";
+
 const PasswordResetConfirm = () => {
-  const [email, setEmail] = useState("");
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const [password, setPassword] = useState("");
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
   };
 
+  const { token } = useParams();
+  console.log(token);
+
   const handleSubmit = (e) => {
+    e.preventDefault()
     authService
-      .resetPassword({ email: email })
+      .resetPasswordConfirm({token: token, password: password})
       .then((res) => {
         console.log(res);
       })
@@ -21,10 +29,11 @@ const PasswordResetConfirm = () => {
         <form onSubmit={handleSubmit} className="flex flex-col items-center">
           <h2>Создание нового пароля</h2>
           <input
-            type="text"
-            placeholder="Код ферификации"
-            value={token}
-            onChange={handleEmailChange}
+            type="password"
+            placeholder="Новый пароль"
+            value={password}
+            onChange={handlePasswordChange}
+            minLength={8}
           ></input>
           <button type="submit">Создать новый пароль</button>
         </form>
@@ -32,3 +41,5 @@ const PasswordResetConfirm = () => {
     </section>
   );
 };
+
+export default PasswordResetConfirm

@@ -4,35 +4,45 @@ import articlesService from "../../services/articlesService";
 
 export const InfoMaterials = () => {
 
-    const [articles, setArticles] = useState({})
+    const [articles, setArticles] = useState({});
+    const [loggedIn, setLoggedIn] = useState(false);
+    const [isLoading, setLoading] = useState(false);
     //localStorage.clear()
-    console.log(articles.results)
+
+    
 
     useEffect(()=>{
+        setLoading(true);
         const jwt = localStorage.getItem("jwt");
         if (jwt) {
+            setLoggedIn(true);
+            console.log("user found");
             articlesService.getArticles({for_clients: "true"}).then( (res) => {
-                console.log(res)
-                setArticles(res)
+                console.log(res);
+                setArticles(res);
+                setLoading(false);
             }).catch(err => {
                 console.log(err)})
         } else {
             console.log("user unauthorized");
+            setLoading(false);
         }
        
-    }, [])
+    }, []);
 
 
 
     return (
-        <section>
-            <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
-                {articles.results === undefined 
+        <section> 
+            
+            {
+                isLoading ? <p>Загрузка</p> : <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
+                {loggedIn === false
                     ? <li>
                         <h1>Вам необходимо зарегистрироваться или авторизироваться, чтобы увидеть пользовательские материалы</h1>
                       </li>
                     : <div>
-                        {articles.results.map((article, i) => {
+                        {articles.map((article, i) => {
                             return (
                                 <li key={i} className="border-blue border-b-[1px] py-5 flex items-center">
                                     <a href={article.file_name} className="h-auto mr-7 mb-0 sm:w-12 sm:mr-4 xs:w-12 xs:mr-3 group">
@@ -48,10 +58,13 @@ export const InfoMaterials = () => {
                                     </div>
                                 </li>
                             )
-                        })}
+                        }) }
                     </div>
                 }
             </ul>
+            
+            }
+            
         </section>
     )
 }

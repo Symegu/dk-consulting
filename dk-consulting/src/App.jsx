@@ -4,10 +4,8 @@ import {About} from "./pages/About";
 import {Info} from "./pages/Info";
 import {Services} from "./pages/Services";
 import { Privacy } from "./pages/Privacy";
-import { useEffect } from "react";
-import { useState } from "react";
-import http from "./http";
 import PasswordReset from "./pages/PasswordReset";
+import PasswordResetConfirm from "./pages/PasswordResetConfirm";
 
 function App() {
 
@@ -23,6 +21,7 @@ function App() {
         <Route path="/services/:service" element={<Services />}></Route>
         <Route path="/privacy-policy" element={<Privacy/>}></Route>
         <Route path="/reset-password" element={<PasswordReset />}></Route>
+        <Route path="/api/password_reset/confirm/:token" element={<PasswordResetConfirm />}></Route>
    </Routes>
   );
 }

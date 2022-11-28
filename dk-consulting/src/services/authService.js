@@ -16,7 +16,7 @@ const authService = {
     return data;
   },
 
-  resetPassword: async (payload) => {
+  resetPasswordConfirm: async (payload) => {
     const { data } = await http.post("/api/password_reset/confirm/", payload);
     return data;
   },
