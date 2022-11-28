@@ -7,6 +7,7 @@ import { Privacy } from "./pages/Privacy";
 import { useEffect } from "react";
 import { useState } from "react";
 import http from "./http";
+import PasswordReset from "./pages/PasswordReset";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/:block" element={<MainPage />}></Route>
         <Route path="/services/:service" element={<Services />}></Route>
         <Route path="/privacy-policy" element={<Privacy/>}></Route>
+        <Route path="/reset-password" element={<PasswordReset />}></Route>
    </Routes>
   );
 }
