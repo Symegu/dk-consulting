@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 import MainPromo from "../components/Main/MainPromo";
 import MainConsult from "../components/Main/MainConsult";
-import MainServices from "../components/Main/MainServices";
+import MainServices from "../components/Services/MainServices";
 import MainCards from "../components/Main/MainCards";
 import { GreyLine } from "../components/UI/GreyLine"
 import Header from "../components/Header&Footer/Header";
 import Button from "../components/UI/Button";
 import { MainSchema } from "../components/Main/MainSchema";
 import Footer from "../components/Header&Footer/Footer";
-import FourSteps from "../components/FourSteps/FourSteps";
+import { FourSteps } from "../components/FourSteps/FourSteps";
 import {FormComponent} from "../components/Main/FormComponent";
 import { HeaderBurger } from "../components/Header&Footer/HeaderBurger";
 import { useRef, useEffect } from "react";

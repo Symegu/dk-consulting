@@ -51,14 +51,10 @@ export default function Login(props) {
                         </svg>
                         <h2 className="text-white text-[40px] text-center leading-[56px] font-extralight mt-[50px] lg:text-4xl md:text-4xl md:mt-[25px] sm:mt-5 sm:text-xl sm:uppercase xs:uppercase xs:text-lg  xs:mt-4">Введите логин и пароль</h2>
 
-                        <form className="flex flex-col w-full items-center max-w-[710px] lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]" onSubmit={handleSubmit}>
+                        <form className="flex flex-col w-full items-center space-y-5 mt-5 max-w-[710px] lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]" onSubmit={handleSubmit}>
                             <div className="flex flex-col w-full items-center max-w-[710px]  py-4 space-y-4 lg:max-w-[515px] md:max-w-[515px] sm:max-w-[320px]">
-                                <input type="name" id="emaill" value={email} onChange={handleEmailChange} placeholder="E-mail" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <input type="name" id="passwordl" value={password} onChange={handlePasswordChange} placeholder="Пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] bo text-[#40454E] font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
-                                <div className="flex items-center w-full border-b-[1px] p-3">
-                                    <input type="checkbox" id="capcha" className="w-[25px] h-[25px] bg-[#40454E] mr-[15px] sm:w-4 sm:h-4 xs:w-4 xs:h-4"/>
-                                    <label htmlFor="capcha" className="text-[16px] leading-[22px] text-white font-extralight lg:text-lg md:text-lg sm:text-base xs:text-base">Я не робот</label>
-                                </div>
+                                <input type="name" id="emaill" value={email} onChange={handleEmailChange} placeholder="E-mail" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
+                                <input type="name" id="passwordl" value={password} onChange={handlePasswordChange} placeholder="Пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
                             </div>
                             <Button bluebtn="true" buttonText="войти" type="submit"></Button>
                         </form>

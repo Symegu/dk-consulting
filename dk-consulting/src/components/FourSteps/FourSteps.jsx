@@ -1,12 +1,11 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import SlideNextButton from "../UI/slideNextButton";
-import 'swiper/css'
+import { SlideNextButton } from "../UI/slideNextButton";
 
-export default function FourSteps() {
+export const FourSteps = () => {
+    
     return (
         <section className="h-[350px] sm:h-[256px]  xs:h-[256px] mx-auto ">
             <Swiper
-                loop={true}
                 slidesPerView={1}
                 className="w-full h-full mx-auto relative"
             >
@@ -14,10 +13,10 @@ export default function FourSteps() {
                     <div className="hidden absolute z-[3] top-0 h-[142px] w-full bg-gradient-to-b from-[#000000] to-0 lg:block md:block sm:block xs:block"></div>
                     <div className="absolute z-[3] bottom-0 h-[142px] w-full bg-gradient-to-t from-[#000000] to-0"></div>
                     <div className="w-[100%] bg-chess h-[100%] text-white bg-no-repeat bg-cover bg-bottom">
-                        <div className="relative z-[4] flex flex-col justify-end items-center h-[100%] py-[25px] lg:justify-between md:justify-between sm:justify-between xs:justify-between max-w-[1290px] lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px] mx-auto">
+                        <div className="relative z-[10] flex flex-col justify-end items-center h-[100%] py-[25px] lg:justify-between md:justify-between sm:justify-between xs:justify-between max-w-[1290px] lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px] mx-auto">
                             <h2 className="font-extralight text-[40px] lg:text-4xl md:text-[36px] sm:text-[20px] sm:leading-[28px] md:leading-[50px] leading-[56px] xs:text-[20px] xs:leading-[28px] text-center">4 ШАГА К ИЗМЕНЕНИЮ</h2>
                             <p className="font-light text-[26px] leading-[36px] w-[80%] md:text-[22px] sm:text-[18px] sm:leading-[25px] md:leading-[31px] sm:w-[370px] text-center lg:text-2xl xs:text-base">от анализа текущей ситуации до построения стратегии развития бизнеса</p>
-                            <SlideNextButton/>
+                            <SlideNextButton />
                         </div>
                     </div>
                 </SwiperSlide>
