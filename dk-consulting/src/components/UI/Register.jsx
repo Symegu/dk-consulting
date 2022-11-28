@@ -29,12 +29,17 @@ export default function Register(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        authService.register({email: email, username: name, password: password, password2: confirmPassword}).then((res) => {
-            console.log(res)
-            props.setVisible(false);
-        }).catch(err => {
-            console.log(err)
-        })
+        if (password === confirmPassword) {
+            authService.register({email: email, username: name, password: password, password2: confirmPassword}).then((res) => {
+                console.log(res)
+                props.setVisible(false);
+            }).catch(err => {
+                console.log(err)
+            })
+        } else {
+            console.log("пароли не совпадают");
+        }
+        
     }
 
     return(
