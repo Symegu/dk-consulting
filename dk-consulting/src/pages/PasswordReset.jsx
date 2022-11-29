@@ -1,10 +1,12 @@
 import { useState } from "react";
 import authService from "../services/authService";
+import {useNavigate} from "react-router";
 
 const PasswordReset = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [msgVisible, setMsgVisible] = useState(false);
+  const navigate = useNavigate();
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -22,6 +24,7 @@ const PasswordReset = () => {
         );
         setTimeout(() => {
           setMsgVisible(false);
+          navigate("/");
         }, "3000");
         console.log(res);
       })

@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import authService from "../services/authService";
 
 const PasswordResetConfirm = () => {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [msgVisible, setMsgVisible] = useState(false);
+  const navigate = useNavigate();
+
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
@@ -24,6 +26,7 @@ const PasswordResetConfirm = () => {
         setMessage("Пароль успешно сброшен!");
         setTimeout(() => {
           setMsgVisible(false);
+          navigate("/")
         }, "3000");
       })
       .catch((err) => {
