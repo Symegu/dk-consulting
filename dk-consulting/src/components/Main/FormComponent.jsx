@@ -3,6 +3,7 @@ import React from "react";
 import Button from "../../components/UI/Button";
 import { useState } from "react";
 import mainFormService from "../../services/mainFormService";
+import { NavLink } from "react-router-dom";
 
 
 export const FormComponent = React.forwardRef((props, forwardedRef) => {
@@ -116,25 +117,25 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                             <label htmlFor="name" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 Ваше имя
                             </label>
-                            <input required type="text" id="name" value={name} onChange={nameChange} placeholder="Иванов Иван" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
+                            <input required type="text" id="name" value={name} onChange={nameChange} placeholder="Иванов Иван" className="px-2 w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                         <li className="flex flex-col">
                             <label htmlFor="name" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 E-mail
                             </label>
-                            <input required type="email" id="email" value={email} onChange={emailChange} placeholder="mail@mail.ru" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
+                            <input required type="email" id="email" value={email} onChange={emailChange} placeholder="mail@mail.ru" className="px-2 w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                         <li className="flex flex-col">
                             <label htmlFor="name" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 Телефон
                             </label>
-                            <input required type="phone" id="phone" value={phone} onChange={phoneChange} placeholder="+7 777 777 77 77" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
+                            <input required type="phone" id="phone" value={phone} onChange={phoneChange} placeholder="+7 777 777 77 77" className="px-2 w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                         <li className="flex flex-col">
                             <label htmlFor="description" className="text-[#4D8BBE] text-[26px] leading-[36px] font-normal md:text-lg sm:text-sm xs:text-sm">
                                 Ваш запрос
                             </label>
-                            <input required type="text" id="description" value={comment} onChange={commentChange} placeholder="Опишите ваш запрос" className="w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
+                            <input required type="text" id="description" value={comment} onChange={commentChange} placeholder="Опишите ваш запрос" className="px-2 w-[100%] border-b-[1px] border-black mt-[20px] text-[#40454E] font-light text-[22px] leading-[30px] mb-[30px] py-1 md:text-lg sm:text-sm sm:mb-5 sm:mt-3 xs:text-sm xs:mb-4 xs:mt-2"/>
                         </li>
                 </ul>
                 <div className="flex flex-col w-[100%] mb-10">
@@ -159,6 +160,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                         </ul>
                 </div>
                 <Button bluebtn={true} buttonText="ОТПРАВИТЬ"/>
+                <p className="text-base py-3 text-grey opacity-60 text-center lg:text-sm md:text-sm sm:text-xs xs:text-xs">Отправляя запрос, я подтверждаю согласие с <br /><NavLink to="/privacy-policy" className="underline cursor-pointer">политикой&nbsp;конфиденциальности</NavLink></p>
             </form>
             }
             
