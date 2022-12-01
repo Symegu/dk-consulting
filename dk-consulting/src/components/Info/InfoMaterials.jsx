@@ -25,6 +25,8 @@ export const InfoMaterials = () => {
         pageNumbers.push(i);
     }
 
+    console.log(currentPosts)
+
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
     }
@@ -88,7 +90,7 @@ export const InfoMaterials = () => {
             </ul>
             
             }
-            {currentPosts <= postsPerPage 
+            {currentPosts.length <= postsPerPage 
                 ? <Pagination pageNumbers={pageNumbers} paginate={paginate} paginateNext={paginateNext} paginatePrev={paginatePrev}/>
                 : <></>
             }
