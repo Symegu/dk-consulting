@@ -86,9 +86,9 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                 <p className="font-normal text-[26px] leading-[36px] text-center text-[#40454E] lg:text-xl md:text-xl sm:hidden xs:hidden">Опишите Ваш запрос либо проблему и мы свяжемся с Вами</p>
             </div>
             {msgVisible
-                ? <div>
-                    <h2>{message}</h2>
-                </div> 
+                ? <div className="flex-col justify-between items-center">
+                    <h2 className="font-normal text-[26px] leading-[36px] text-center text-blue lg:text-xl md:text-xl sm:text-base xs:text-base">{message}</h2>
+                  </div> 
                 : <form
                 type="submit"
                 className="flex flex-col  items-center h-full mt-[37px]"

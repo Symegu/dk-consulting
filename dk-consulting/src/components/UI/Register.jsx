@@ -71,7 +71,7 @@ export default function Register(props) {
 
                         {msgVisible
                             ? <div className="flex flex-col items-center justify-center py-20">
-                                <h2 className="text-white text-[40px] text-center leading-[56px] font-extralight mt-[50px] lg:text-4xl md:text-4xl md:mt-[25px] sm:mt-5 sm:text-xl sm:uppercase xs:uppercase xs:text-lg  xs:mt-4">{message}</h2>
+                                <h2 className="text-white text-[40px] text-center leading-[56px] font-extralight lg:text-4xl md:text-4xl md:mt-[25px] sm:mt-5 sm:text-xl sm:uppercase xs:uppercase xs:text-lg  xs:mt-4">{message}</h2>
                             </div> 
                             : <div className="flex flex-col items-center">
                                 <svg className="sm:w-11 xs:w-11"  width="77" height="59" viewBox="0 0 77 59" fill="none" xmlns="http://www.w3.org/2000/svg">
