@@ -35,15 +35,15 @@ export const ServicePromo = () => {
       <div className="bg-gradient-to-r from-[#090A20] via-[#06082BE8] to-[#07093E14] h-full relative sm:bg-transparent xs:bg-transparent">
         <div className="flex absolute text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[100px] sm:text-[10px] sm:leading-[12px]  xs:text-[10px] xs:leading-[12px] xs:right-[calc(50%-61px)] ">
           {account ? (
-            <div>
+            <div className="flex items-center">
               <p className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]">
-                {email}
+                {email}&nbsp;
               </p>
               <button
                 className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]"
                 onClick={logout}
               >
-                Выйти
+                / Выйти
               </button>
             </div>
           ) : (

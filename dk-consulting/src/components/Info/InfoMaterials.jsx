@@ -1,15 +1,39 @@
 import {useEffect, useState} from "react";
 import articlesService from "../../services/articlesService";
+import { Pagination } from "../UI/Pagination";
 
 
 export const InfoMaterials = () => {
 
-    const [articles, setArticles] = useState({});
+    const [articles, setArticles] = useState([]);
     const [loggedIn, setLoggedIn] = useState(false);
     const [isLoading, setLoading] = useState(false);
     //localStorage.clear()
 
-    
+    console.log(articles)
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(10);
+
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = articles.slice(indexOfFirstPost, indexOfLastPost);
+
+    const pageNumbers = [];
+
+    for (let i=1; i<=Math.ceil(articles.length/postsPerPage); i++) {
+        pageNumbers.push(i);
+    }
+
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber)
+    }
+    const paginateNext = () => {
+        pageNumbers.length >= currentPage+1 ? setCurrentPage(currentPage+1) : setCurrentPage(1)
+    }
+    const paginatePrev = () => {
+        0 >= currentPage-1 ? setCurrentPage(pageNumbers.length) : setCurrentPage(currentPage-1)
+    }
 
     useEffect(()=>{
         setLoading(true);
@@ -39,10 +63,10 @@ export const InfoMaterials = () => {
                 isLoading ? <p>Загрузка</p> : <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
                 {loggedIn === false
                     ? <li>
-                        <h1>Вам необходимо зарегистрироваться или авторизироваться, чтобы увидеть пользовательские материалы</h1>
+                        <h1 className="par text-center lg:text-lg md:text-lg sm:text-sm xs:text-xs">Вам необходимо зарегистрироваться или авторизироваться, чтобы увидеть пользовательские материалы</h1>
                       </li>
                     : <div>
-                        {articles.map((article, i) => {
+                        {currentPosts.map((article, i) => {
                             return (
                                 <li key={i} className="border-blue border-b-[1px] py-5 flex items-center">
                                     <a href={article.file_name} className="h-auto mr-7 mb-0 sm:w-12 sm:mr-4 xs:w-12 xs:mr-3 group">
@@ -63,6 +87,10 @@ export const InfoMaterials = () => {
                 }
             </ul>
             
+            }
+            {currentPosts <= postsPerPage 
+                ? <Pagination pageNumbers={pageNumbers} paginate={paginate} paginateNext={paginateNext} paginatePrev={paginatePrev}/>
+                : <></>
             }
             
         </section>
