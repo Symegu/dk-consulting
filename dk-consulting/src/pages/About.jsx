@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 
 import AboutCards from "../components/About/AboutCards";
 import { AboutPrinciples } from "../components/About/AboutPrinciples";
@@ -37,6 +38,10 @@ export const About = () => {
 
     return (
         <div className="overflow-hidden">
+            <Helmet>
+                <title>О компании | DK-CONSULTING</title>
+                <meta name="description" content="Информация о компании" />
+            </Helmet>
 
             {defaultPageWidth > bp
                 ? <Header />
