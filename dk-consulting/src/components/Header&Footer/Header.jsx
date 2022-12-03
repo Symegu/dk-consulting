@@ -1,21 +1,27 @@
 import {NavLink} from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 import hlogo from "../../assets/Header/headlogo.svg";
 
 export default function Header() {
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     return(
         <section className="h-[70px] bg-[#40454E] fixed top-0 w-full z-[100] lg:h-[87px] md:h-[87px]">
             <div className="flex flex-row justify-between items-center max-w-[1290px] mx-auto py-[17px] lg:max-w-[940px] lg:py-[12px] md:max-w-[690px] md:py-3">
-                <NavLink to="/" className="min-w-[max-content] mr-[46px] lg:mr-[35px] md:mr-[9px] md:min-w-[116px]">
+                <NavLink to="/"  onClick={scrollToTop} smooth={true} className="min-w-[max-content] mr-[46px] lg:mr-[35px] md:mr-[9px] md:min-w-[116px]">
                     <img src={hlogo} alt="logo" className="w-[198px] lg:w-[148px] md:w-[116px]"/>
                 </NavLink>
                 <nav className="flex flex-row justify-between items-center px-[46px] border-x-[1px] border-white h-full w-full lg:px-[36px] lg:py-5 md:px-[5px] md:py-4">
-                    <NavLink to="/about">
+                    <NavLink to="/about"  onClick={scrollToTop} smooth={true}>
                         <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey lg:text-[9px] lg:leading-[10px] lg:px-[4px] lg:py-[10px] md:text-[9px] md:leading-[10px] md:px-[4px] md:py-[10px]">О компании</p>
                     </NavLink>
-                    <NavLink to="/services">
+                    <NavLink to="/services"  onClick={scrollToTop} smooth={true}>
                         <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey lg:text-[9px] lg:leading-[10px] lg:px-[4px] lg:py-[10px] md:text-[9px] md:leading-[10px] md:px-[4px] md:py-[10px]">услуги</p>
                     </NavLink>
-                    <NavLink to="/info">
+                    <NavLink to="/info"  onClick={scrollToTop} smooth={true}>
                         <p className="text-[12px] leading-[12px] text-white uppercase px-[8px] py-[15px] ring-white rounded-[4px] hover:ring-[1px] focus:bg-white focus:text-grey lg:text-[9px] lg:leading-[10px] lg:px-[4px] lg:py-[10px] md:text-[9px] md:leading-[10px] md:px-[4px] md:py-[10px]">полезная информация</p>
                     </NavLink>
                     <NavLink to="/mainform">
@@ -27,7 +33,7 @@ export default function Header() {
                         <svg className="md:w-14px h-auto" width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.1949 11.2341L10.059 10.0974C10.2156 9.95372 10.3366 9.78701 10.4217 9.59731C10.5063 9.40813 10.5486 9.20902 10.5486 8.99998C10.5486 8.79094 10.5063 8.59183 10.4217 8.40265C10.3366 8.21295 10.2156 8.04624 10.059 7.90253L11.1949 6.76588C11.4952 7.06637 11.7237 7.4092 11.8804 7.79435C12.0371 8.18003 12.1154 8.5819 12.1154 8.99998C12.1154 9.41806 12.0371 9.81967 11.8804 10.2048C11.7237 10.5905 11.4952 10.9336 11.1949 11.2341ZM13.1143 13.1546L12.0175 12.0572C12.4223 11.6522 12.7356 11.1884 12.9576 10.6658C13.1796 10.1432 13.2905 9.5879 13.2905 8.99998C13.2905 8.41206 13.1796 7.8568 12.9576 7.3342C12.7356 6.81161 12.4223 6.3478 12.0175 5.94279L13.1143 4.84534C13.6757 5.39406 14.1066 6.02771 14.4069 6.74628C14.7072 7.46485 14.8574 8.21609 14.8574 8.99998C14.8574 9.78387 14.7072 10.5351 14.4069 11.2537C14.1066 11.9722 13.6757 12.6059 13.1143 13.1546ZM2.30316 17.6228C1.87228 17.6228 1.50355 17.4694 1.19698 17.1627C0.889877 16.8554 0.736328 16.4862 0.736328 16.055V1.94493C0.736328 1.51378 0.889877 1.14457 1.19698 0.837283C1.50355 0.530518 1.87228 0.377136 2.30316 0.377136H10.1373C10.5682 0.377136 10.9372 0.530518 11.2443 0.837283C11.5508 1.14457 11.7041 1.51378 11.7041 1.94493V5.08051H10.1373V4.29661H2.30316V13.7033H10.1373V12.9195H11.7041V16.055C11.7041 16.4862 11.5508 16.8554 11.2443 17.1627C10.9372 17.4694 10.5682 17.6228 10.1373 17.6228H2.30316ZM2.30316 15.2711V16.055H10.1373V15.2711H2.30316ZM2.30316 2.72882H10.1373V1.94493H2.30316V2.72882Z" fill="#E8E9EF"/>
                         </svg>
-                        <p className="ml-[10px] text-[16px] w-full font-light lg:text-[14px] md:text-[13px] md:ml-[8px]">+7(495)220-35-50</p>
+                        <p className="ml-[10px] text-[16px] w-full font-light lg:text-[14px] md:text-[13px] md:ml-[8px]">+7 495 220-35-50</p>
                     </div>
                     <div className="flex flex-row justify-between ml-[20px] md:ml-0">
                         <a href="https://api.whatsapp.com/send?phone=79852203550" className="mr-[15px] group lg:mr-[13px] md:mr-[8px]">
