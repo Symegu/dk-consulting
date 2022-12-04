@@ -29,16 +29,16 @@ export const InfoPromo = () => {
     return (
         <div className="h-[910px] lg:h-[685px] sm:h-[256px] xs:h-[328px] bg-no-repeat bg-bottom bg-infopromo bg-cover xs:bg-top">
             <div className="bg-gradient-to-r from-[#090A20] via-[#06082BE8] to-[#07093E14] h-full xs:bg-gradient-to-t xs:from-[#090A20] xs:to-[#07093E14] relative">
-            <div className="w-full absolute">
-                    <div className="max-w-[1290px] mx-auto flex items-end lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] xs:max-w-[290px]">
-                        <div className="flex absolute z-10 text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[75px] sm:text-[10px] sm:leading-[12px] sm:right-[60px] xs:text-[10px] xs:leading-[12px] xs:right-[calc(50%-61px)] ">
+                <div className="w-full absolute h-8 sm:h-5 xs:h-5">
+                    <div className="max-w-[1290px] h-full w-full flex justify-end items-end mx-auto  lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] sm:justify-end xs:justify-center xs:max-w-[290px]">
+                        <div className="flex z-10 text-white font-extralight text-[16px] leading-[22px] sm:text-[10px] sm:leading-[12px] sm:right-[60px] xs:text-[10px] xs:leading-[12px] xs:right-[calc(50%-61px)] ">
                             {
                                 account ?  <div>
-                                    <p className="hover:text-blue inline sm:text-[10px] xs:text-[10px]">{email} </p>
-                                    <button className="hover:text-blue sm:text-[10px] xs:text-[10px]" onClick={logout}>/ Выйти</button>
+                                    <p className="hover:text-blue  duration-300 inline sm:text-[10px] xs:text-[10px]">{email} </p>
+                                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={logout}>/ Выйти</button>
                                     </div> :  <div>
-                                    <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация / </button>
-                                    <button className="hover:text-[#27699E] sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button>
+                                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация / </button>
+                                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button>
                                 </div>
                             }
                         </div>

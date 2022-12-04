@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import {useState} from "react";
 import authService from "../../services/authService";
@@ -91,8 +91,9 @@ export default function Register(props) {
                                     <input type="password" id="conpassword" value={confirmPassword || ""} onChange={handlePasswordRChange} placeholder="Повторите пароль" className="w-[100%] bg-[#0A0B22] border-b-[1px] text-white font-light text-[22px] leading-[16px] p-3 lg:text-lg md:text-lg sm:text-base xs:text-base"/>
                                 </div>
                                 <Button bluebtn="true" buttonText="зарегистрироваться" ></Button>
+                                <p className="text-base py-3 text-lightgrey opacity-40 text-center lg:text-sm md:text-sm sm:text-xs xs:text-xs">Отправляя запрос, я подтверждаю согласие с <br /><NavLink to="/privacy-policy" className="underline cursor-pointer">политикой&nbsp;конфиденциальности</NavLink></p>
                              </form>
-                            <button className="text-blue text-xl font-light mt-8 lg:text-lg md:text-lg sm:text-base sm:mt-4 xs:text-sm xs:mt-4" onClick={()=> {
+                            <button className="text-blue text-xl font-light lg:text-lg md:text-lg sm:text-base xs:text-sm" onClick={()=> {
                                 props.setVisible(false);
                                 props.setLoginVisible(true);
                             }}>
