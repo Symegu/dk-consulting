@@ -4,7 +4,6 @@ import Button from "../../components/UI/Button";
 import { useState } from "react";
 import mainFormService from "../../services/mainFormService";
 import { NavLink } from "react-router-dom";
-import MainPopup from "./MainPopup";
 
 export const FormComponent = React.forwardRef((props, forwardedRef) => {
     const [name, setName] = useState("");
