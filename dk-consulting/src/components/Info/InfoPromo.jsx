@@ -1,10 +1,8 @@
 import Button from "../UI/Button";
-import Register from "../UI/Register";
-import Login from "../UI/Login";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
-export const InfoPromo = ({account, email, logout, setRegVisible, setLoginVisible, setAccount, loginVisible, regVisible}) => {
+export const InfoPromo = ({account, email, logout, setRegVisible, setLoginVisible}) => {
 
     return (
         <div className="h-[910px] lg:h-[685px] sm:h-[256px] xs:h-[328px] bg-no-repeat bg-bottom bg-infopromo bg-cover xs:bg-top">
@@ -36,8 +34,6 @@ export const InfoPromo = ({account, email, logout, setRegVisible, setLoginVisibl
                     </div>
                 </div>
             </div>
-            <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
-            <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount} regVisible={setRegVisible}/>
         </div>
     )
 }

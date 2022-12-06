@@ -46,13 +46,13 @@ export default function Register(props) {
                 setTimeout(() => {
                     setMsgVisible(false);
                     props.setVisible(false);
-                }, "3000")
+                }, "2000")
             })
         } else {
             setMessage("Пароли не совпадают, проверьте данные и попробуйте еще раз");
             setTimeout(() => {
                 setMsgVisible(false);
-            }, "3000")
+            }, "2000")
         }
         
     }

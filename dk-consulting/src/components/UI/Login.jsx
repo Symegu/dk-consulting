@@ -32,7 +32,7 @@ export default function Login(props) {
                 props.setAccount(true);
                 setMsgVisible(false);
                 props.setVisible(false);
-              }, "3000")
+              }, "2000")
             
         }).catch(err => {
             setMessage("Что-то пошло не так, проверьте правильность введенных данных");
@@ -40,7 +40,7 @@ export default function Login(props) {
             setTimeout(() => {
                 setMsgVisible(false);
                 props.setVisible(false);
-              }, "3000")
+              }, "2000")
         })
     }
 

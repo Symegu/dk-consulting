@@ -1,11 +1,10 @@
 import {useEffect, useState} from "react";
 
 import { Pagination } from "../UI/Pagination";
-import Register from "../UI/Register";
-import Login from "../UI/Login";
 
 
-export const InfoMaterials = ({setAccount, loginVisible, regVisible, articles, setRegVisible, setLoginVisible, isLoading, account}) => {
+
+export const InfoMaterials = ({ articles, setRegVisible, setLoginVisible, isLoading, account }) => {
 
     
     //localStorage.clear()
@@ -39,8 +38,6 @@ export const InfoMaterials = ({setAccount, loginVisible, regVisible, articles, s
 
     return (
         <section id="info-materials"> 
-            <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
-            <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount} regVisible={setRegVisible}/>
             {isLoading ? <p>Загрузка</p> : <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
                 {account === false
                     ? <li className="flex flex-col items-center">

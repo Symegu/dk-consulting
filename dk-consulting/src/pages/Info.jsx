@@ -8,6 +8,8 @@ import { HeaderBurger } from "../components/Header&Footer/HeaderBurger";
 import { InfoMaterials } from "../components/Info/InfoMaterials";
 import { Helmet } from "react-helmet";
 import articlesService from "../services/articlesService";
+import Register from "../components/UI/Register";
+import Login from "../components/UI/Login"
 
 
 export const Info = () => {
@@ -44,7 +46,7 @@ export const Info = () => {
         localStorage.clear();
         setAccount(false);
     }
-    
+
     //
     const [defaultPageWidth, setDefaultPageWidth] = React.useState(window.innerWidth);
     const bp = 767;
@@ -72,22 +74,18 @@ export const Info = () => {
                     email={email} 
                     logout={logout} 
                     setRegVisible={setRegVisible} 
-                    setLoginVisible={setLoginVisible} 
-                    setAccount={setAccount}
-                    loginVisible={loginVisible} 
-                    regVisible={regVisible}
+                    setLoginVisible={setLoginVisible}
                 />
                 <InfoMaterials
-                    setAccount={setAccount}
                     loginVisible={loginVisible} 
                     regVisible={regVisible}
                     articles={articles}
-                    setRegVisible={setRegVisible} 
-                    setLoginVisible={setLoginVisible}
                     isLoading={isLoading}
                     account={account} 
                 />
             </main>
+            <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
+            <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount} regVisible={setRegVisible}/>
             <Footer />
         </div>
     )
