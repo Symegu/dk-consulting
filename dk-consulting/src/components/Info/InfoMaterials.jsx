@@ -38,7 +38,7 @@ export const InfoMaterials = ({ articles, setRegVisible, setLoginVisible, isLoad
 
     return (
         <section id="info-materials"> 
-            {isLoading ? <p>Загрузка</p> : <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
+            {isLoading ? <p className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">Загрузка...</p> : <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
                 {account === false
                     ? <li className="flex flex-col items-center">
                         <h1 className="par leading-5 text-center lg:text-lg md:text-lg sm:text-sm sm:leading-5 xs:text-xs xs:leading-5">

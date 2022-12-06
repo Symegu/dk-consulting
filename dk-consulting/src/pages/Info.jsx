@@ -82,12 +82,12 @@ export const Info = () => {
                     setLoginVisible={setLoginVisible}
                 />
                 <InfoMaterials
-                    loginVisible={loginVisible} 
-                    regVisible={regVisible}
                     articles={articles}
                     isLoading={isLoading}
                     account={account} 
                     paginattion={paginattion}
+                    setRegVisible={setRegVisible} 
+                    setLoginVisible={setLoginVisible}
                 />
             </main>
             <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
