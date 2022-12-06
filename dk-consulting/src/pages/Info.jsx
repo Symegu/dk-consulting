@@ -19,11 +19,13 @@ export const Info = () => {
     const [email, setEmail] = useState("");
 
     const [articles, setArticles] = useState([]);
+    const [paginattion, setPaginateVisible] = useState(false)
     const [isLoading, setLoading] = useState(false);
 
     useEffect(()=>{
         setLoading(true);
         const jwt = localStorage.getItem('jwt');
+        setPaginateVisible(false);
       if (jwt) {
         setAccount(true);
         console.log("user found");
@@ -33,18 +35,21 @@ export const Info = () => {
             console.log(res);
             setArticles(res);
             setLoading(false);
+            setPaginateVisible(true);
         }).catch(err => {
             console.log(err)})
       } else {
         console.log("net tokena");
         console.log("user unauthorized");
             setLoading(false);
+            setPaginateVisible(false);
       }
     }, [account])
 
     const logout = () => {
         localStorage.clear();
         setAccount(false);
+        setPaginateVisible(false);
     }
 
     //
@@ -82,6 +87,7 @@ export const Info = () => {
                     articles={articles}
                     isLoading={isLoading}
                     account={account} 
+                    paginattion={paginattion}
                 />
             </main>
             <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>

@@ -4,7 +4,7 @@ import { Pagination } from "../UI/Pagination";
 
 
 
-export const InfoMaterials = ({ articles, setRegVisible, setLoginVisible, isLoading, account }) => {
+export const InfoMaterials = ({ articles, setRegVisible, setLoginVisible, isLoading, account, paginattion }) => {
 
     
     //localStorage.clear()
@@ -79,8 +79,8 @@ export const InfoMaterials = ({ articles, setRegVisible, setLoginVisible, isLoad
             </ul>
             
             }
-            {currentPosts.length <= postsPerPage 
-                ? <Pagination pageNumbers={pageNumbers} paginate={paginate} paginateNext={paginateNext} paginatePrev={paginatePrev}/>
+            {currentPosts.length <= postsPerPage
+                ? <Pagination pageNumbers={pageNumbers} paginate={paginate} paginateNext={paginateNext} paginatePrev={paginatePrev} paginattion={paginattion}/>
                 : <></>
             }
             
