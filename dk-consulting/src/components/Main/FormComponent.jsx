@@ -102,7 +102,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                     <h2 className="text-[36px] leading-[50px] font-extralight text-center uppercase lg:text-4xl md:text-4xl sm:text-2xl xs:text-2xl">
                         Запрос на сотрудничество
                     </h2>
-                    <p className="font-normal text-[26px] leading-[36px] text-center text-[#40454E] lg:text-xl md:text-xl sm:hidden xs:hidden">
+                    <p className="font-normal text-[26px] leading-[36px] text-center mt-1 text-[#40454E] lg:text-xl md:text-xl sm:hidden xs:hidden">
                         Опишите Ваш запрос либо проблему и мы свяжемся с Вами
                     </p>
                 </div>
@@ -339,7 +339,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                     </div>
                     <Button bluebtn={true} buttonText="ОТПРАВИТЬ" />
                     <p className="text-base py-3 text-grey opacity-60 text-center lg:text-sm md:text-sm sm:text-xs xs:text-xs">
-                        Отправляя запрос, я подтверждаю согласие с <br />
+                        Отправляя запрос, я подтверждаю согласие&nbsp;с <br />
                         <NavLink
                             to="/privacy-policy"
                             className="underline cursor-pointer"

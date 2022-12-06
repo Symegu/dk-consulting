@@ -39,11 +39,11 @@ export default function MainPromo() {
                 <div className="flex absolute text-white font-extralight text-[16px] leading-[22px] top-[16px] right-[0]">
                     {
                     account ?  <div>
-                        <p className="hover:text-blue duration-300 inline sm:text-[10px] xs:text-[10px]">{email} </p>
-                        <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={logout}>/ Выйти</button>
+                        <p className="hover:opacity-100 duration-500 opacity-60 inline sm:text-[10px] xs:text-[10px]">{email} </p>&nbsp;/&nbsp;
+                        <button className="hover:opacity-100 duration-500 opacity-60 sm:text-[10px] xs:text-[10px]" onClick={logout}> Выйти</button>
                     </div> :  <div>
-                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация / </button>
-                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button></div>
+                    <button className="hover:opacity-100 duration-500 opacity-60 sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация </button>&nbsp;/&nbsp;
+                    <button className="hover:opacity-100 duration-500 opacity-60 sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button></div>
                     }
                 </div>
                 <h2 className="max-w-[653px] text-center text-white bigTitle lg:text-[36px] lg:leading-[50px] md:mb-[70px] sm:mb-[47px] sm:text-[20px] sm:leading-[32px] sm:font-light xs:mb-[47px] xs:text-[20px] xs:leading-[32px] xs:font-light">Комплексный консалтинг производственных компаний</h2>

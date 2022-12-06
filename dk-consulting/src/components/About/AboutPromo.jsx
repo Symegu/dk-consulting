@@ -34,13 +34,12 @@ export const AboutPromo = () => {
                     <div className="max-w-[1290px] h-full w-full flex justify-end items-end mx-auto  lg:max-w-[940px] md:max-w-[690px] sm:max-w-[420px] sm:justify-end xs:justify-center xs:max-w-[290px]">
                         <div className="flex z-10 text-white font-extralight text-[16px] leading-[22px] sm:text-[10px] sm:leading-[12px] sm:right-[60px] xs:text-[10px] xs:leading-[12px] xs:right-[calc(50%-61px)] ">
                             {
-                                account ?  <div>
-                                    <p className="hover:text-blue duration-300 inline sm:text-[10px] xs:text-[10px]">{email} </p>
-                                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={logout}>/ Выйти</button>
-                                    </div> :  <div>
-                                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация / </button>
-                                    <button className="hover:text-blue duration-300 sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button>
-                                </div>
+                            account ?  <div>
+                                <p className="hover:opacity-100 duration-500 opacity-60 inline sm:text-[10px] xs:text-[10px]">{email} </p>&nbsp;/&nbsp;
+                                <button className="hover:opacity-100 duration-500 opacity-60 sm:text-[10px] xs:text-[10px]" onClick={logout}> Выйти</button>
+                            </div> :  <div>
+                            <button className="hover:opacity-100 duration-500 opacity-60 sm:text-[10px] xs:text-[10px]" onClick={() => {setRegVisible(true)}}>Регистрация </button>&nbsp;/&nbsp;
+                            <button className="hover:opacity-100 duration-500 opacity-60 sm:text-[10px] xs:text-[10px]" onClick={() => {setLoginVisible(true)}}>Авторизация</button></div>
                             }
                         </div>
                     </div>
