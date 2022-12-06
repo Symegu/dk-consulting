@@ -75,7 +75,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                     }, "3000");
                 })
                 .catch((err) => {
-                    setMessage("Благодарим за обращение!  Мы скоро с вами свяжемся!");
+                    setMessage("Что-то пошло не так!");
                     console.log(err);
                     setTimeout(() => {
                         setMsgVisible(false);

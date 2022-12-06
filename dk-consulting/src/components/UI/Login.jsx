@@ -35,7 +35,7 @@ export default function Login(props) {
               }, "3000")
             
         }).catch(err => {
-            setMessage("Что-то пошло не так, попробуйте позже!");
+            setMessage("Что-то пошло не так, проверьте правильность введенных данных");
             console.log(err)
             setTimeout(() => {
                 setMsgVisible(false);
