@@ -1,19 +1,13 @@
 import {useEffect, useState} from "react";
-import articlesService from "../../services/articlesService";
+
 import { Pagination } from "../UI/Pagination";
 import Register from "../UI/Register";
 import Login from "../UI/Login";
 
 
-export const InfoMaterials = () => {
+export const InfoMaterials = ({setAccount, loginVisible, regVisible, articles, setRegVisible, setLoginVisible, isLoading, account}) => {
 
-    const [loginVisible, setLoginVisible] = useState(false);
-    const [regVisible, setRegVisible] = useState(false);
-    const [account, setAccount] = useState(false);
-
-    const [articles, setArticles] = useState([]);
-    const [loggedIn, setLoggedIn] = useState(false);
-    const [isLoading, setLoading] = useState(false);
+    
     //localStorage.clear()
 
     console.log(articles)
@@ -43,33 +37,12 @@ export const InfoMaterials = () => {
         0 >= currentPage-1 ? setCurrentPage(pageNumbers.length) : setCurrentPage(currentPage-1)
     }
 
-    useEffect(()=>{
-        setLoading(true);
-        const jwt = localStorage.getItem("jwt");
-        if (jwt) {
-            setLoggedIn(true);
-            console.log("user found");
-            articlesService.getArticles({for_clients: "true"}).then( (res) => {
-                console.log(res);
-                setArticles(res);
-                setLoading(false);
-            }).catch(err => {
-                console.log(err)})
-        } else {
-            console.log("user unauthorized");
-            setLoading(false);
-        }
-       
-    }, []);
-
-
-
     return (
         <section id="info-materials"> 
             <Register isVisible={regVisible} setVisible={setRegVisible} setLoginVisible={setLoginVisible}/>
             <Login isVisible={loginVisible} setVisible={setLoginVisible} setAccount={setAccount} regVisible={setRegVisible}/>
             {isLoading ? <p>Загрузка</p> : <ul className="py-[52px] max-w-[1290px] mx-auto relative lg:max-w-[940px] lg:py-[60px] md:max-w-[690px] sm:max-w-[420px] sm:py-[20px] xs:max-w-[290px] xs:py-5">
-                {loggedIn === false
+                {account === false
                     ? <li className="flex flex-col items-center">
                         <h1 className="par leading-5 text-center lg:text-lg md:text-lg sm:text-sm sm:leading-5 xs:text-xs xs:leading-5">
                             Вам необходимо 

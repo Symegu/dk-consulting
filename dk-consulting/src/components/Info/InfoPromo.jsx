@@ -1,30 +1,10 @@
 import Button from "../UI/Button";
 import Register from "../UI/Register";
 import Login from "../UI/Login";
-import {useState, useEffect} from "react";
+
 import { Link, animateScroll as scroll } from "react-scroll";
 
-export const InfoPromo = () => {
-    const [loginVisible, setLoginVisible] = useState(false);
-    const [regVisible, setRegVisible] = useState(false);
-    const [account, setAccount] = useState(false);
-    const [email, setEmail] = useState("");
-
-    useEffect(()=>{
-        const jwt = localStorage.getItem('jwt');
-      if (jwt) {
-        setAccount(true);
-        const localEmail = localStorage.getItem("email");
-        setEmail(localEmail);
-      } else {
-        console.log("net tokena");
-      }
-    }, [account])
-
-    const logout = () => {
-        localStorage.clear();
-        setAccount(false);
-    }
+export const InfoPromo = ({account, email, logout, setRegVisible, setLoginVisible, setAccount, loginVisible, regVisible}) => {
 
     return (
         <div className="h-[910px] lg:h-[685px] sm:h-[256px] xs:h-[328px] bg-no-repeat bg-bottom bg-infopromo bg-cover xs:bg-top">
