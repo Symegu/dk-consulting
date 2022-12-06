@@ -1,4 +1,3 @@
-import {NavLink} from "react-router-dom";
 import {useState, useEffect} from "react";
 import Register from "../UI/Register";
 import Login from "../UI/Login";

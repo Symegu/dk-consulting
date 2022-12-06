@@ -339,7 +339,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                     </div>
                     <Button bluebtn={true} buttonText="ОТПРАВИТЬ" />
                     <p className="text-base py-3 text-grey opacity-60 text-center lg:text-sm md:text-sm sm:text-xs xs:text-xs">
-                        Отправляя запрос, я подтверждаю согласие&nbsp;с <br />
+                        Отправляя&nbsp;запрос, я&nbsp;подтверждаю&nbsp;согласие&nbsp;с <br />
                         <NavLink
                             to="/privacy-policy"
                             className="underline cursor-pointer"
