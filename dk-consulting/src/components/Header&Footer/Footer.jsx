@@ -1,11 +1,17 @@
 import {NavLink} from "react-router-dom";
 import hlogo from "../../assets/Header/headlogo.svg";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Footer() {
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
+
     return(
         <section className="h-[150px] bg-[#40454E] w-full lg:h-[185px] md:h-[185px] sm:h-[195px] xs:h-[185px]">
             <div className="flex flex-row justify-between items-center max-w-[1290px] mx-auto py-[17px] h-full lg:max-w-[940px] lg:justify-start md:max-w-[690px] md:justify-start sm:max-w-[420px] sm:justify-between sm:flex-start sm:flex-col sm:flex-wrap xs:max-w-[290px] xs:justify-between xs:flex-start xs:flex-col xs:flex-wrap">
-                <NavLink to="/" className="mr-[80px] w-[280px] md:mr-[10px] md:w-[100px] sm:w-[50%] sm:mr-[0px] xs:w-[50%] xs:mr-[0px]">
+                <NavLink to="/"  onClick={scrollToTop} className="mr-[80px] w-[280px] md:mr-[10px] md:w-[100px] sm:w-[50%] sm:mr-[0px] xs:w-[50%] xs:mr-[0px]">
                     <img src={hlogo} alt="logo" className=" w-[200px] h-auto md:w-[100px] sm:w-[167px] xs:w-[100px]"/>
                 </NavLink>
                 <div  className="flex flex-row flex-wrap justify-center items-center border-x-[1px] border-white lg:flex-col lg:items-start lg:pl-4 md:flex-col md:items-start md:pl-4 sm:flex-col sm:items-start sm:pl-0 sm:border-x-0 sm:w-[210px] xs:flex-col xs:items-start xs:pl-0 xs:border-x-0 xs:w-[50%]">

@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Button from "./Button";
 import { useState } from "react";
 import authService from "../../services/authService";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Register(props) {
     const [name, setName] = useState("");
@@ -71,6 +72,10 @@ export default function Register(props) {
                 setMsgVisible(false);
             }, "2000");
         }
+    };
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
     };
 
     return (
@@ -194,6 +199,7 @@ export default function Register(props) {
                                         <NavLink
                                             to="/privacy-policy"
                                             className="underline cursor-pointer"
+                                            onClick={scrollToTop}
                                         >
                                             политикой&nbsp;конфиденциальности
                                         </NavLink>

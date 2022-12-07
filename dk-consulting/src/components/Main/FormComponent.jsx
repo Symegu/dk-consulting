@@ -4,6 +4,7 @@ import Button from "../../components/UI/Button";
 import { useState } from "react";
 import mainFormService from "../../services/mainFormService";
 import { NavLink } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const FormComponent = React.forwardRef((props, forwardedRef) => {
     const [name, setName] = useState("");
@@ -57,7 +58,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
         );
         setMsgVisible(true);
         setMessage("Загрузка...");
-        if (subject !== "" && source !== "") {
+        if (email !== "" && phone !== "") {
             mainFormService
                 .postForm({
                     request_type: subject,
@@ -89,6 +90,10 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                 setMsgVisible(false);
             }, "3000");
         }
+    };
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
     };
 
     return (
@@ -343,6 +348,7 @@ export const FormComponent = React.forwardRef((props, forwardedRef) => {
                         <NavLink
                             to="/privacy-policy"
                             className="underline cursor-pointer"
+                            onClick={scrollToTop}
                         >
                             политикой&nbsp;конфиденциальности
                         </NavLink>
